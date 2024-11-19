@@ -9066,6 +9066,26 @@
 				(justify left top)
 			)
 		)
+		(pin "SDI" output
+			(at 223.52 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "575e91e4-eb69-4c13-996f-0c318216dbe6")
+		)
+		(pin "SCK" input
+			(at 207.01 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d23a16af-63e7-4926-b7fe-584b44cbcd62")
+		)
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
