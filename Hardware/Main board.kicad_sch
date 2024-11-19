@@ -8952,6 +8952,36 @@
 				(justify left top)
 			)
 		)
+		(pin "Cont1" output
+			(at 201.93 54.61 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c9626896-1311-4507-9ab9-fe842875d5d0")
+		)
+		(pin "Nuke 1" input
+			(at 201.93 49.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bfd67362-cb49-4277-bb82-4b961eaadc8d")
+		)
+		(pin "V_in" input
+			(at 201.93 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4dc3870a-132d-4536-a3b8-1fb489c7cc2f")
+		)
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
