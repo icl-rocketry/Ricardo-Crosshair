@@ -3208,6 +3208,16 @@
 		)
 		(uuid "08037f72-1ad9-4bc9-95c3-6f637ed2bbf8")
 	)
+	(wire
+		(pts
+			(xy 62.23 105.41) (xy 69.85 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09346d9b-370d-4d02-bf70-f95cebf429e6")
+	)
 	(polyline
 		(pts
 			(xy 90.17 78.74) (xy 68.58 78.74)
@@ -3510,6 +3520,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 97.79) (xy 139.7 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c85dcbd-b3b3-47a7-ac98-2193fbd5eeeb")
+	)
+	(wire
+		(pts
 			(xy 64.77 115.57) (xy 69.85 115.57)
 		)
 		(stroke
@@ -3588,6 +3608,16 @@
 		)
 		(uuid "5f62d945-84f5-4f6d-a95e-3bf004d5b742")
 	)
+	(wire
+		(pts
+			(xy 135.89 95.25) (xy 139.7 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6373ceb5-18c7-4f93-8344-d8016fb458de")
+	)
 	(polyline
 		(pts
 			(xy 12.7 12.7) (xy 175.26 12.7)
@@ -3650,6 +3680,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 104.14) (xy 207.01 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d9f664-6e05-4e3e-bafe-ce3d5f05b3bd")
+	)
+	(wire
+		(pts
 			(xy 27.94 40.64) (xy 30.48 40.64)
 		)
 		(stroke
@@ -3697,6 +3737,16 @@
 			(type default)
 		)
 		(uuid "7c5f3091-7791-43b3-8d50-43f6a72274c9")
+	)
+	(wire
+		(pts
+			(xy 205.74 100.33) (xy 207.01 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82f7494b-83f2-47b0-9897-23177d1b225d")
 	)
 	(wire
 		(pts
@@ -3860,6 +3910,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 92.71) (xy 207.01 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af508be-40d3-468e-a926-1460781fbbad")
+	)
+	(wire
+		(pts
 			(xy 148.59 132.08) (xy 151.13 132.08)
 		)
 		(stroke
@@ -4000,6 +4060,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 100.33) (xy 139.7 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db32f410-c3fa-4b88-87dd-085d4360b976")
+	)
+	(wire
+		(pts
 			(xy 39.37 21.59) (xy 44.45 21.59)
 		)
 		(stroke
@@ -4067,6 +4137,16 @@
 			(type default)
 		)
 		(uuid "e58214e3-6e5f-442e-a3df-91298d6756bd")
+	)
+	(wire
+		(pts
+			(xy 205.74 96.52) (xy 207.01 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6e6b221-f563-4ed4-a899-b5d51b0e1093")
 	)
 	(wire
 		(pts
@@ -4304,6 +4384,17 @@
 		)
 		(uuid "d1c6fc43-e4e2-4960-8801-314be63634af")
 	)
+	(label "Chip_Selec"
+		(at 205.74 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "102ba696-f2b4-4188-8634-4911de7b7e78")
+	)
 	(label "CHIP_PU"
 		(at 36.83 165.1 180)
 		(fields_autoplaced yes)
@@ -4314,6 +4405,28 @@
 			(justify right bottom)
 		)
 		(uuid "26dbf329-a496-4f56-b8c1-4fdb94c45eca")
+	)
+	(label "MISO"
+		(at 139.7 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "29d81a9e-efc1-4444-8c4b-bf659f49c4fc")
+	)
+	(label "MOSI"
+		(at 139.7 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "319ed483-bc89-4aff-a36a-37f9f2b73b23")
 	)
 	(label "CAN+"
 		(at 115.57 185.42 0)
@@ -4403,6 +4516,17 @@
 		)
 		(uuid "6732e03e-da7a-48a0-a557-ffb41e062f91")
 	)
+	(label "MISO"
+		(at 205.74 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69e97286-add1-40e2-818c-ae09d74ea859")
+	)
 	(label "CAN_RX"
 		(at 13.97 40.64 0)
 		(fields_autoplaced yes)
@@ -4458,6 +4582,17 @@
 		)
 		(uuid "8cb2cd3a-4ef9-4ae5-b6bc-2b1d16f657d6")
 	)
+	(label "SCL"
+		(at 139.7 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9625130a-86cd-407e-99d6-35a52498db9d")
+	)
 	(label "RXD"
 		(at 64.77 115.57 180)
 		(fields_autoplaced yes)
@@ -4512,6 +4647,39 @@
 			(justify left bottom)
 		)
 		(uuid "bf482801-739d-4fa2-877c-e72f08f9d7d6")
+	)
+	(label "Chip_Selec"
+		(at 62.23 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c09aa141-4e97-4e36-91e7-4de1e76522a6")
+	)
+	(label "SCL"
+		(at 205.74 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c690151d-99fc-4f0b-9ded-17a312996b29")
+	)
+	(label "MOSI"
+		(at 205.74 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ca65aa8f-1b33-4279-af1e-2dc433db5168")
 	)
 	(label "CAN_RX"
 		(at 115.57 182.88 0)
@@ -9068,7 +9236,7 @@
 	)
 	(sheet
 		(at 207.01 90.17)
-		(size 16.51 15.24)
+		(size 16.51 16.51)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -9088,7 +9256,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 207.01 105.9946 0)
+			(at 207.01 107.2646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9096,18 +9264,18 @@
 				(justify left top)
 			)
 		)
-		(pin "SDI" output
-			(at 223.52 97.79 0)
+		(pin "SDI" input
+			(at 207.01 104.14 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "575e91e4-eb69-4c13-996f-0c318216dbe6")
 		)
 		(pin "SCK" input
-			(at 207.01 97.79 180)
+			(at 207.01 100.33 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9115,6 +9283,26 @@
 				(justify left)
 			)
 			(uuid "d23a16af-63e7-4926-b7fe-584b44cbcd62")
+		)
+		(pin "SDO" output
+			(at 207.01 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a02af141-5e8c-47ea-a3ba-0b77a3401d69")
+		)
+		(pin "CSB" input
+			(at 207.01 92.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "aebcea1f-25fc-4592-b77f-35fc26350ecb")
 		)
 		(instances
 			(project "Main board"
