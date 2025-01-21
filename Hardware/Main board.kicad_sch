@@ -3180,6 +3180,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 96.52) (xy 229.87 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f6c9f2-95b2-4368-9ea9-4b348266d3a6")
+	)
+	(wire
+		(pts
 			(xy 30.48 191.77) (xy 30.48 190.5)
 		)
 		(stroke
@@ -3387,6 +3397,16 @@
 			(type default)
 		)
 		(uuid "318cdbda-f2fe-4337-9b97-a693e6cb6f11")
+	)
+	(wire
+		(pts
+			(xy 228.6 100.33) (xy 229.87 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343229cd-91bc-48a0-bbe9-59e000ce81a7")
 	)
 	(wire
 		(pts
@@ -4078,6 +4098,16 @@
 		)
 		(uuid "db851147-6a1e-4d19-898c-0ba71182359b")
 	)
+	(wire
+		(pts
+			(xy 228.6 92.71) (xy 229.87 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7d17fa-4078-496c-bbba-f9ae55b7d279")
+	)
 	(polyline
 		(pts
 			(xy 124.46 111.76) (xy 137.16 111.76)
@@ -4472,6 +4502,17 @@
 		)
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
+	(label "SCL_Baro"
+		(at 205.74 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c25b25c-31f5-4dba-849b-907c127d1719")
+	)
 	(label "Data-"
 		(at 99.06 162.56 0)
 		(fields_autoplaced yes)
@@ -4582,7 +4623,7 @@
 		)
 		(uuid "8cb2cd3a-4ef9-4ae5-b6bc-2b1d16f657d6")
 	)
-	(label "SCL"
+	(label "SCL_Baro"
 		(at 139.7 100.33 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4658,17 +4699,6 @@
 			(justify right bottom)
 		)
 		(uuid "c09aa141-4e97-4e36-91e7-4de1e76522a6")
-	)
-	(label "SCL"
-		(at 205.74 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c690151d-99fc-4f0b-9ded-17a312996b29")
 	)
 	(label "MOSI"
 		(at 205.74 104.14 180)
@@ -9236,7 +9266,7 @@
 	)
 	(sheet
 		(at 207.01 90.17)
-		(size 16.51 16.51)
+		(size 21.59 16.51)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -9264,26 +9294,6 @@
 				(justify left top)
 			)
 		)
-		(pin "SDI" input
-			(at 207.01 104.14 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "575e91e4-eb69-4c13-996f-0c318216dbe6")
-		)
-		(pin "SCK" input
-			(at 207.01 100.33 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d23a16af-63e7-4926-b7fe-584b44cbcd62")
-		)
 		(pin "SDO" output
 			(at 207.01 96.52 180)
 			(effects
@@ -9303,6 +9313,56 @@
 				(justify left)
 			)
 			(uuid "aebcea1f-25fc-4592-b77f-35fc26350ecb")
+		)
+		(pin "SDA" bidirectional
+			(at 228.6 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c6f6c57a-f367-414c-9fb1-31cc5f7c505d")
+		)
+		(pin "INT" output
+			(at 228.6 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5abd9cf9-ea01-45d5-b21b-b86d8a34ff8a")
+		)
+		(pin "SCL_Baro" input
+			(at 207.01 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e2c20aff-ee0e-43cd-a228-ddeb5e4bc6d5")
+		)
+		(pin "SCL_Photo" input
+			(at 228.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3774ae63-e5aa-41ca-911e-a5ca9ebada50")
+		)
+		(pin "SDI" bidirectional
+			(at 207.01 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "796e5773-4845-43bc-b09d-d79dd04790dc")
 		)
 		(instances
 			(project "Main board"
