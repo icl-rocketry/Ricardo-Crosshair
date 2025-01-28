@@ -497,6 +497,8 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/CAN+": "USB",
+      "/CAN-": "USB",
       "/Data+": "USB",
       "/Data-": "USB"
     },
@@ -653,6 +655,10 @@
     [
       "ab7b921d-66d3-49d7-abff-63184671bf46",
       "Voltage Regulation"
+    ],
+    [
+      "3151accb-1938-449b-8397-baa4e59e1635",
+      "USB-RBUS"
     ]
   ],
   "text_variables": {}

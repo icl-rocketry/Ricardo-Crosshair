@@ -1389,9 +1389,9 @@
 		)
 		(uuid "fd178049-6deb-45ad-8f31-ef0d5f4a1c37")
 	)
-	(text "Need to determine R here from data sheet"
+	(text "Need to determine R here from data sheet\n\nHigh resistance to keep pins high\n\nFind library for BU27006MUC-Z + use that symbol (should be on mouser)"
 		(exclude_from_sim no)
-		(at 223.266 60.452 0)
+		(at 243.586 54.356 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1471,7 +1471,7 @@
 		)
 		(uuid "c8b8daa9-558d-444b-ba01-1db6f045f305")
 	)
-	(hierarchical_label "SDA"
+	(hierarchical_label "SDA_Photo"
 		(shape bidirectional)
 		(at 214.63 92.71 180)
 		(fields_autoplaced yes)
