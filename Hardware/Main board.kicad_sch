@@ -3510,6 +3510,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 123.19) (xy 69.85 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43af942b-2d34-4802-b8c4-c1258d9223d6")
+	)
+	(wire
+		(pts
 			(xy 57.15 147.32) (xy 59.69 147.32)
 		)
 		(stroke
@@ -3680,6 +3690,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 52.07) (xy 236.22 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643306d4-9e1c-457c-a92e-28ac7e0dd1b7")
+	)
+	(wire
+		(pts
 			(xy 39.37 30.48) (xy 39.37 40.64)
 		)
 		(stroke
@@ -3697,6 +3717,16 @@
 			(type default)
 		)
 		(uuid "6a46ab16-f5fd-4446-b3e9-c38f81123df3")
+	)
+	(wire
+		(pts
+			(xy 237.49 59.69) (xy 236.22 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c178847-492b-4ae1-8138-49a53cbce967")
 	)
 	(wire
 		(pts
@@ -4050,6 +4080,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 67.31) (xy 236.22 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe0be5f-0fcb-45b4-8be9-5ebff46a666c")
+	)
+	(wire
+		(pts
 			(xy 59.69 67.31) (xy 69.85 67.31)
 		)
 		(stroke
@@ -4297,6 +4337,16 @@
 			(type default)
 		)
 		(uuid "e6e6b221-f563-4ed4-a899-b5d51b0e1093")
+	)
+	(wire
+		(pts
+			(xy 67.31 125.73) (xy 69.85 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8426ad9-482f-4087-8366-343f86be4d54")
 	)
 	(wire
 		(pts
@@ -4585,6 +4635,17 @@
 		)
 		(uuid "0f558e02-8408-43cd-8ff5-6c32359a6a44")
 	)
+	(label "CC"
+		(at 237.49 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0fad0cad-d431-455a-8401-eacdd8a7e99f")
+	)
 	(label "Chip_Selec"
 		(at 201.93 85.09 180)
 		(fields_autoplaced yes)
@@ -4607,6 +4668,17 @@
 		)
 		(uuid "190218b8-714f-45df-a165-c01f88d6e60e")
 	)
+	(label "PG"
+		(at 237.49 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e898036-45bb-435e-a66a-f471fe3a39d9")
+	)
 	(label "PyroPWR"
 		(at 201.93 64.77 180)
 		(fields_autoplaced yes)
@@ -4617,6 +4689,17 @@
 			(justify right bottom)
 		)
 		(uuid "218473e0-fa16-44fe-88d5-c0de0c9d1689")
+	)
+	(label "CC"
+		(at 67.31 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23457f1a-5b6a-4572-b18a-b3cdbaeded5f")
 	)
 	(label "CHIP_PU"
 		(at 36.83 165.1 180)
@@ -4849,6 +4932,17 @@
 		)
 		(uuid "772ed65a-76c6-46ba-a3fb-6bb772935cdf")
 	)
+	(label "BUS_VMON"
+		(at 237.49 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cee5f37-8f5a-4d17-b9a6-0417b7e9c9bf")
+	)
 	(label "CAN_TX"
 		(at 135.89 69.85 0)
 		(fields_autoplaced yes)
@@ -4981,6 +5075,17 @@
 		)
 		(uuid "bf482801-739d-4fa2-877c-e72f08f9d7d6")
 	)
+	(label "PG"
+		(at 135.89 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfe52297-1bef-4caf-b434-e3a147f7994f")
+	)
 	(label "Chip_Selec"
 		(at 62.23 105.41 180)
 		(fields_autoplaced yes)
@@ -5101,6 +5206,17 @@
 			(justify left bottom)
 		)
 		(uuid "de552ae9-cde6-4643-8cc7-9de2579dadae")
+	)
+	(label "BUS_VMON"
+		(at 67.31 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e006a814-75c5-42fb-97d9-1b5241de7bc9")
 	)
 	(label "SCL_I2C"
 		(at 237.49 55.88 0)
