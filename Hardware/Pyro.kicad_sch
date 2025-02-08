@@ -2198,7 +2198,7 @@
 		)
 		(uuid "9a42f3c3-dd2a-4677-92dd-31f4d8188029")
 	)
-	(hierarchical_label "V_in"
+	(hierarchical_label "Pyro_out"
 		(shape input)
 		(at 80.01 60.96 180)
 		(fields_autoplaced yes)
