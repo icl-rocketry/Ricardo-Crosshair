@@ -9814,6 +9814,44 @@
 		)
 	)
 	(sheet
+		(at 213.36 153.67)
+		(size 24.13 6.35)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "67916d43-8d10-4a4a-9d49-ec89c4793b52")
+		(property "Sheetname" "Unused BUCK-BOOST"
+			(at 213.36 152.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 213.36 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Main board"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 203.2 50.8)
 		(size 33.02 17.78)
 		(fields_autoplaced yes)
