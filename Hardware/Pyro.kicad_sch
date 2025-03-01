@@ -783,48 +783,49 @@
 				)
 			)
 		)
-		(symbol "Isolator:LTV-247"
+		(symbol "Isolator:TCMT1109"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U9"
-				(at 0 8.636 0)
+			(property "Reference" "U"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "782-TCMT1109"
-				(at 0 6.096 0)
+			(property "Value" "TCMT1109"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "iclr:SOIC127P700X230-4N"
-				(at -5.08 -5.08 0)
+			(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/83510/tcmt1100.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/83510/tcmt11.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
+			(property "Description" "Optocoupler, Vce 70V, CTR 200-400%, Viso 3750V (RMS), SOP-4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -833,7 +834,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN DC Quad Optocoupler"
+			(property "ki_keywords" "NPN DC opto"
 				(at 0 0 0)
 				(effects
 					(font
@@ -842,7 +843,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOP*4.4x10.4mm*P1.27mm*"
+			(property "ki_fp_filters" "SOP*4.4x2.6mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -851,7 +852,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LTV-247_0_1"
+			(symbol "TCMT1109_1_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -1007,8 +1008,6 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "LTV-247_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -1074,228 +1073,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "LTV-247_2_1"
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "LTV-247_3_1"
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "LTV-247_4_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1854,12 +1631,6 @@
 		)
 	)
 	(junction
-		(at 146.05 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42764463-0b1d-4b3b-9ad3-b52c02f7b78a")
-	)
-	(junction
 		(at 153.67 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1882,6 +1653,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4fc4601-a66b-4399-b54d-a611194b0d00")
+	)
+	(junction
+		(at 146.05 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc7fc39b-b21b-4b65-9424-e840932eac37")
 	)
 	(wire
 		(pts
@@ -2055,36 +1832,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 60.96) (xy 107.95 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ae9c6ae-9202-4014-83d2-d86cc25041dd")
-	)
-	(wire
-		(pts
-			(xy 107.95 57.15) (xy 113.03 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a32483a-a4e4-450b-b9c9-67f1ee6ea1ef")
-	)
-	(wire
-		(pts
-			(xy 113.03 57.15) (xy 113.03 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad370e15-51af-4841-a1a8-b011edd151d8")
-	)
-	(wire
-		(pts
 			(xy 115.57 100.33) (xy 115.57 105.41)
 		)
 		(stroke
@@ -2092,6 +1839,16 @@
 			(type default)
 		)
 		(uuid "c55e1fad-d55d-491c-b637-ee26a79aa6af")
+	)
+	(wire
+		(pts
+			(xy 80.01 59.69) (xy 113.03 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c654d615-2430-483c-ac19-6ebf36c728a0")
 	)
 	(wire
 		(pts
@@ -2132,16 +1889,6 @@
 			(type default)
 		)
 		(uuid "ee2e8f77-37b0-4aad-8627-2fa4341b30a6")
-	)
-	(wire
-		(pts
-			(xy 107.95 60.96) (xy 107.95 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee4ddf61-f5fd-4b10-a5e4-7460a8f12d0b")
 	)
 	(wire
 		(pts
@@ -2200,7 +1947,7 @@
 	)
 	(hierarchical_label "Pyro_out"
 		(shape input)
-		(at 80.01 60.96 180)
+		(at 80.01 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2300,7 +2047,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Male"
-			(at 112.1918 56.9472 90)
+			(at 120.904 51.562 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2779,6 +2526,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Isolator:TCMT1109")
+		(at 153.67 80.01 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7897cad9-87dc-4e64-838b-8b652ff0bfcf")
+		(property "Reference" "U12"
+			(at 153.67 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TCMT1109"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 153.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/83510/tcmt1100.pdf"
+			(at 153.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Optocoupler, Vce 70V, CTR 200-400%, Viso 3750V (RMS), SOP-4"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "69a64679-15dd-4882-b70a-6da27f0c170c")
+		)
+		(pin "2"
+			(uuid "37d7d9ef-250b-4d02-ad1b-5233b5b8cd3c")
+		)
+		(pin "1"
+			(uuid "448a32e3-f488-41f1-b11d-f6190a746f0f")
+		)
+		(pin "4"
+			(uuid "619f9cf0-68a8-4a78-b811-0f2701fa2f36")
+		)
+		(instances
+			(project ""
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/2f4d1188-68cf-4851-a56c-97d43238a03a"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 146.05 86.36 0)
 		(unit 1)
@@ -2979,120 +2801,6 @@
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/2f4d1188-68cf-4851-a56c-97d43238a03a"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Isolator:LTV-247")
-		(at 153.67 80.01 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1c77001-d096-44e8-98d0-4128891a16ef")
-		(property "Reference" "U6"
-			(at 153.67 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "782-TCMT1109"
-			(at 153.67 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "iclr:SOIC127P700X230-4N"
-			(at 158.75 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/83510/tcmt11.pdf"
-			(at 153.67 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 153.67 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7186915-e61a-4b6e-aed0-7737c6529532")
-		)
-		(pin "3"
-			(uuid "e99859ed-e897-4329-bfd0-eb96436ba90d")
-		)
-		(pin "4"
-			(uuid "2f3524fb-a95c-4eae-8a8a-a2635519c24a")
-		)
-		(pin "2"
-			(uuid "f4bee9e3-fb4c-45df-861d-bd8746a580e9")
-		)
-		(pin "13"
-			(uuid "2c418e1b-fd99-488d-907c-b33ffb65497d")
-		)
-		(pin "14"
-			(uuid "4c275c41-b231-415d-947f-e252c9c098c5")
-		)
-		(pin "3"
-			(uuid "387de142-7fbe-488d-9d5d-5451ac4eb84f")
-		)
-		(pin "4"
-			(uuid "c12567e5-1f73-45be-a376-e94c1e8586c7")
-		)
-		(pin "11"
-			(uuid "a233e0e1-926f-43fa-beed-32310935784d")
-		)
-		(pin "12"
-			(uuid "ae794907-350d-4778-9f39-9a0e4caca9e8")
-		)
-		(pin "5"
-			(uuid "75570809-b02f-46c8-9747-728dab21136f")
-		)
-		(pin "6"
-			(uuid "81efb7ac-1e8b-4ac1-9153-c9311f8126bb")
-		)
-		(pin "10"
-			(uuid "6022b5d2-2fa6-4938-a246-d4973fdf4ddb")
-		)
-		(pin "7"
-			(uuid "d5246f3d-8469-4a00-8f37-f3086cb3edfd")
-		)
-		(pin "8"
-			(uuid "e3fac34a-b91e-4907-876d-2db9917b82ac")
-		)
-		(pin "9"
-			(uuid "172f89b0-b5fe-46ec-bbc8-85136ddc393f")
-		)
-		(instances
-			(project "Main board"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/2f4d1188-68cf-4851-a56c-97d43238a03a"
-					(reference "U6")
 					(unit 1)
 				)
 			)
