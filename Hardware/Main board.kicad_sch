@@ -3368,16 +3368,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 52.07) (xy 236.22 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "643306d4-9e1c-457c-a92e-28ac7e0dd1b7")
-	)
-	(wire
-		(pts
 			(xy 39.37 30.48) (xy 39.37 40.64)
 		)
 		(stroke
@@ -4058,16 +4048,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 125.73) (xy 69.85 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8426ad9-482f-4087-8366-343f86be4d54")
-	)
-	(wire
-		(pts
 			(xy 73.66 26.67) (xy 71.12 26.67)
 		)
 		(stroke
@@ -4352,17 +4332,6 @@
 		)
 		(uuid "d1c6fc43-e4e2-4960-8801-314be63634af")
 	)
-	(label "CC"
-		(at 237.49 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0fad0cad-d431-455a-8401-eacdd8a7e99f")
-	)
 	(label "Chip_Selec"
 		(at 201.93 85.09 180)
 		(fields_autoplaced yes)
@@ -4373,6 +4342,17 @@
 			(justify right bottom)
 		)
 		(uuid "102ba696-f2b4-4188-8634-4911de7b7e78")
+	)
+	(label "VSPI_MOSI"
+		(at 62.23 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1297a64c-f09b-40fd-b60f-854bef24072c")
 	)
 	(label "VSPI_SCLK"
 		(at 262.89 152.4 180)
@@ -4395,17 +4375,6 @@
 			(justify right bottom)
 		)
 		(uuid "218473e0-fa16-44fe-88d5-c0de0c9d1689")
-	)
-	(label "CC"
-		(at 67.31 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "23457f1a-5b6a-4572-b18a-b3cdbaeded5f")
 	)
 	(label "SCK_Baro"
 		(at 139.7 100.33 0)
@@ -4562,17 +4531,6 @@
 		(uuid "42c8670e-bce9-4cc4-8724-d76292914948")
 	)
 	(label "VSPI_MOSI"
-		(at 62.23 90.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "464863c3-cf5c-4470-adcb-844afd938103")
-	)
-	(label "VSPI_MOSI"
 		(at 262.89 146.05 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4725,17 +4683,6 @@
 			(justify right bottom)
 		)
 		(uuid "862b534d-931a-4c67-b0fb-0651a3e83751")
-	)
-	(label "SD1_CS"
-		(at 62.23 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8bcc9988-1a74-49de-8641-55c9aafac800")
 	)
 	(label "BOOT"
 		(at 68.58 165.1 180)
@@ -5033,6 +4980,17 @@
 			(justify right bottom)
 		)
 		(uuid "d86c3741-4ac4-497a-932c-093872ed7ace")
+	)
+	(label "SD1_CS"
+		(at 62.23 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ddd79aa4-d516-4e94-a808-698e9eca6818")
 	)
 	(label "CAN-"
 		(at 115.57 187.96 0)
@@ -9596,16 +9554,6 @@
 				(justify left)
 			)
 			(uuid "234949bf-23a6-4026-8ea7-9cf29211427e")
-		)
-		(pin "CC" output
-			(at 236.22 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5bea718d-b766-4ec8-b138-dad8be6bd3ee")
 		)
 		(pin "INT_Fault" output
 			(at 203.2 63.5 180)
