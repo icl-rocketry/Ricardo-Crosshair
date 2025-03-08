@@ -4385,18 +4385,8 @@
 		)
 		(uuid "102ba696-f2b4-4188-8634-4911de7b7e78")
 	)
-	(label "VSPI_MOSI"
-		(at 62.23 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1297a64c-f09b-40fd-b60f-854bef24072c")
-	)
-	(label "VSPI_SCLK"
-		(at 262.89 152.4 180)
+	(label "SD_CLK"
+		(at 248.92 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4404,6 +4394,16 @@
 			(justify right bottom)
 		)
 		(uuid "18b8296f-ad16-4e6e-9a8f-84764956d741")
+	)
+	(label "SD_DAT1"
+		(at 248.92 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1909071f-7c83-4116-b790-4e46e3a18b91")
 	)
 	(label "PyroPWR"
 		(at 201.93 59.69 180)
@@ -4444,16 +4444,6 @@
 			(justify right bottom)
 		)
 		(uuid "26dbf329-a496-4f56-b8c1-4fdb94c45eca")
-	)
-	(label "VSPI_MISO"
-		(at 62.23 97.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "28852ac4-c3b2-44f2-9e6c-912bbde8eb16")
 	)
 	(label "SCL_I2C"
 		(at 226.06 85.09 0)
@@ -4547,18 +4537,8 @@
 		)
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
-	(label "VSPI_SCLK"
-		(at 62.23 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "42c8670e-bce9-4cc4-8724-d76292914948")
-	)
-	(label "VSPI_MOSI"
-		(at 262.89 146.05 180)
+	(label "SD_CMD"
+		(at 248.92 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4576,6 +4556,16 @@
 			(justify right bottom)
 		)
 		(uuid "4c25b25c-31f5-4dba-849b-907c127d1719")
+	)
+	(label "SD_DAT3"
+		(at 62.23 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c595043-9adc-446f-82fb-5eb7b76148b0")
 	)
 	(label "Data-"
 		(at 99.06 162.56 0)
@@ -4629,6 +4619,16 @@
 		)
 		(uuid "6732e03e-da7a-48a0-a557-ffb41e062f91")
 	)
+	(label "SD_CMD"
+		(at 135.89 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "685dc194-a295-481d-ab31-730b5394714b")
+	)
 	(label "MISO"
 		(at 201.93 88.9 180)
 		(effects
@@ -4649,8 +4649,18 @@
 		)
 		(uuid "6c1128bc-38d2-4f8f-92a4-d6ebf87a1eb9")
 	)
-	(label "VSPI_MISO"
-		(at 262.89 156.21 180)
+	(label "SD_DAT2"
+		(at 135.89 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c7fe23e-285f-4949-9437-c37a8c9e54c8")
+	)
+	(label "SD_DAT0"
+		(at 248.92 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4689,6 +4699,16 @@
 		)
 		(uuid "7cee5f37-8f5a-4d17-b9a6-0417b7e9c9bf")
 	)
+	(label "SD_DAT1"
+		(at 62.23 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "82f530ec-8f35-49b2-8759-f2b77502d672")
+	)
 	(label "INT"
 		(at 62.23 85.09 180)
 		(effects
@@ -4709,15 +4729,25 @@
 		)
 		(uuid "8cb2cd3a-4ef9-4ae5-b6bc-2b1d16f657d6")
 	)
-	(label "SD1_DET"
-		(at 62.23 87.63 180)
+	(label "SD_CLK"
+		(at 62.23 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "97ddb714-46f2-4c0a-b30b-6900fe04f93e")
+		(uuid "909506ab-4993-464f-9655-6dbab6124f5d")
+	)
+	(label "SD_DAT0"
+		(at 62.23 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "94e5e73f-c35c-4321-af58-c1315e94c0b6")
 	)
 	(label "SDA-Photo"
 		(at 226.06 88.9 0)
@@ -4728,6 +4758,16 @@
 			(justify left bottom)
 		)
 		(uuid "97e1fd95-bc70-412a-98c8-d3c0d7e9caf9")
+	)
+	(label "SD_DAT2"
+		(at 248.92 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "98ebead0-cf4f-46e6-b06b-99edb2b29e1e")
 	)
 	(label "RXD"
 		(at 64.77 115.57 180)
@@ -4811,8 +4851,8 @@
 		)
 		(uuid "af08a401-891d-4e99-9550-ccb1ac6ce118")
 	)
-	(label "SD1_DET"
-		(at 262.89 143.51 180)
+	(label "SD_DET"
+		(at 248.92 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4850,6 +4890,16 @@
 			(justify left bottom)
 		)
 		(uuid "bf482801-739d-4fa2-877c-e72f08f9d7d6")
+	)
+	(label "SD_DET"
+		(at 62.23 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c12218dd-4fbf-48ab-a87f-8e16668d1ad0")
 	)
 	(label "CAN_RX"
 		(at 135.89 72.39 0)
@@ -4971,16 +5021,6 @@
 		)
 		(uuid "d86c3741-4ac4-497a-932c-093872ed7ace")
 	)
-	(label "SD1_CS"
-		(at 62.23 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ddd79aa4-d516-4e94-a808-698e9eca6818")
-	)
 	(label "CAN-"
 		(at 115.57 187.96 0)
 		(effects
@@ -5073,8 +5113,8 @@
 			)
 		)
 	)
-	(label "SD1_CS"
-		(at 262.89 148.59 180)
+	(label "SD_DAT3"
+		(at 248.92 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9379,8 +9419,8 @@
 		)
 	)
 	(sheet
-		(at 262.89 139.7)
-		(size 16.51 20.32)
+		(at 248.92 120.65)
+		(size 20.32 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9395,7 +9435,7 @@
 		)
 		(uuid "9b3767b0-c58a-45b6-92e7-d7216660795a")
 		(property "Sheetname" "SD-card"
-			(at 262.89 138.9884 0)
+			(at 248.92 119.9384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9404,7 +9444,7 @@
 			)
 		)
 		(property "Sheetfile" "SD.kicad_sch"
-			(at 262.89 160.6046 0)
+			(at 248.92 145.3646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9412,9 +9452,9 @@
 				(justify left top)
 			)
 		)
-		(pin "SD1_DET" input
-			(at 262.89 143.51 180)
-			(uuid "5fdbb87c-1959-4062-aaaa-5370fe99c778")
+		(pin "SD_DAT3{slash}CD (CS)" passive
+			(at 248.92 129.54 180)
+			(uuid "4972e56a-0637-4167-b828-1f29e9911e95")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9422,9 +9462,9 @@
 				(justify left)
 			)
 		)
-		(pin "SD1_CS" passive
-			(at 262.89 148.59 180)
-			(uuid "7a9609d8-bc4c-4e25-8236-2d1f62eff583")
+		(pin "SD_CMD (MOSI)" passive
+			(at 248.92 127 180)
+			(uuid "d845f6d2-ee78-4a62-a87a-02458535ef76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9432,9 +9472,9 @@
 				(justify left)
 			)
 		)
-		(pin "VSPI_MOSI" passive
-			(at 262.89 146.05 180)
-			(uuid "5f3c608a-4bc3-43fb-ae23-6fb4b970f942")
+		(pin "SD_CLK (SCLK)" passive
+			(at 248.92 132.08 180)
+			(uuid "0a676f6a-82b2-439e-8df6-c4899aacd832")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9442,9 +9482,9 @@
 				(justify left)
 			)
 		)
-		(pin "VSPI_SCLK" passive
-			(at 262.89 152.4 180)
-			(uuid "41ed303e-eae8-46b7-86f2-974acffd6ca7")
+		(pin "SD_DAT0 (MISO)" passive
+			(at 248.92 134.62 180)
+			(uuid "a16edb72-b9ab-49d5-ad6a-77765f8ce2a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9452,9 +9492,29 @@
 				(justify left)
 			)
 		)
-		(pin "VSPI_MISO" passive
-			(at 262.89 156.21 180)
-			(uuid "c7999c33-79ca-4493-8e1d-cd47a266d02b")
+		(pin "SD_DAT1" passive
+			(at 248.92 137.16 180)
+			(uuid "d82bee77-4c3b-41fa-b5c9-8ae28cc3e2f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_DET" input
+			(at 248.92 123.19 180)
+			(uuid "fbaa58cc-9576-4e20-bfea-9a987e7276ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SD_DAT2" passive
+			(at 248.92 139.7 180)
+			(uuid "d2073ce1-fc7b-4d38-a673-ebb30cb108e9")
 			(effects
 				(font
 					(size 1.27 1.27)
