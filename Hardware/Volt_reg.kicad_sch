@@ -5384,6 +5384,16 @@
 		)
 		(uuid "2f7b8f65-6513-4697-bd60-0598a84bc353")
 	)
+	(label "Vbuckout"
+		(at 201.93 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a15160c-38d4-441f-8829-9520db08d675")
+	)
 	(label "DGate"
 		(at 86.36 69.85 90)
 		(effects
@@ -5413,16 +5423,6 @@
 			(justify left bottom)
 		)
 		(uuid "5049ad2a-be76-4032-8d94-03769b4c111f")
-	)
-	(label "Vbuckout"
-		(at 213.36 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72debd2a-ac65-4215-800c-fd3c4309fbb4")
 	)
 	(label "VOUT_2"
 		(at 118.11 180.34 0)
@@ -5650,6 +5650,17 @@
 		)
 		(uuid "7ca0866d-aa2a-43e2-8cfa-3e5c75df69f1")
 	)
+	(hierarchical_label "PyroPWR"
+		(shape output)
+		(at 213.36 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c82dd02-8935-4952-82bf-2b9a4a99e1cd")
+	)
 	(hierarchical_label "SDA-BuckBC"
 		(shape bidirectional)
 		(at 71.12 167.64 180)
@@ -5660,17 +5671,6 @@
 			(justify right)
 		)
 		(uuid "b9890508-65ed-4036-9912-4e30ecacca44")
-	)
-	(hierarchical_label "PyroPWR"
-		(shape output)
-		(at 201.93 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d8e3832c-58e5-4a98-aef7-ddc89c89e7a9")
 	)
 	(hierarchical_label "VIN"
 		(shape input)
