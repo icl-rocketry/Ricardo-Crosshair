@@ -2870,6 +2870,12 @@
 		(uuid "14e6f865-9c0a-49ea-b81b-07711ade0119")
 	)
 	(junction
+		(at 97.79 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "158404d3-1900-4254-ba89-563ae605aa15")
+	)
+	(junction
 		(at 186.69 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3305,6 +3311,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 127) (xy 110.49 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c25fc8e-d894-4bdf-a821-3ca3537cb495")
+	)
+	(wire
+		(pts
 			(xy 252.73 57.15) (xy 255.27 57.15)
 		)
 		(stroke
@@ -3435,7 +3451,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 127) (xy 110.49 127)
+			(xy 88.9 127) (xy 97.79 127)
 		)
 		(stroke
 			(width 0)
@@ -5430,6 +5446,72 @@
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/48a413b4-b7c2-44ac-971c-583c31b73475"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 97.79 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3de9d279-008a-4aac-a2dd-79e6bfc3a079")
+		(property "Reference" "TP14"
+			(at 98.298 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 98.298 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 102.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0788d67b-a3d2-42f5-b24f-870947cb8b59")
+		)
+		(instances
+			(project "Main board"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/48a413b4-b7c2-44ac-971c-583c31b73475"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
