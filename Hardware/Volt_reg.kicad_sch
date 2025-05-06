@@ -5283,6 +5283,16 @@
 		)
 		(uuid "2669e9d9-06ac-4a0d-8cf7-10f974d5ee6f")
 	)
+	(label "Switch_out"
+		(at 213.36 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "281af4c8-255c-4ff4-9eaf-00a58cdc6590")
+	)
 	(label "HGate"
 		(at 121.92 68.58 90)
 		(effects
@@ -5302,16 +5312,6 @@
 			(justify left bottom)
 		)
 		(uuid "3530df24-da1f-41d1-a264-3d6677ec4956")
-	)
-	(label "Vbuckout"
-		(at 201.93 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3a15160c-38d4-441f-8829-9520db08d675")
 	)
 	(label "DGate"
 		(at 86.36 69.85 90)
@@ -5533,16 +5533,6 @@
 		)
 		(uuid "d3528c94-7130-4642-8e64-f8b8a2a9a31c")
 	)
-	(label "Switch_out"
-		(at 26.67 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d47496fc-84d6-4efa-9f89-5293885c71db")
-	)
 	(label "VCC_2"
 		(at 118.11 162.56 0)
 		(effects
@@ -5552,6 +5542,16 @@
 			(justify left bottom)
 		)
 		(uuid "f0fe2997-e697-4493-874e-0b20f1540f01")
+	)
+	(label "Vbuckout"
+		(at 59.69 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f11ffe02-c17a-4bf8-b7a0-02cea887142b")
 	)
 	(label "AGND"
 		(at 151.13 162.56 0)
@@ -5629,17 +5629,6 @@
 		)
 		(uuid "7ca0866d-aa2a-43e2-8cfa-3e5c75df69f1")
 	)
-	(hierarchical_label "PyroPWR"
-		(shape output)
-		(at 213.36 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9c82dd02-8935-4952-82bf-2b9a4a99e1cd")
-	)
 	(hierarchical_label "SDA-BuckBC"
 		(shape bidirectional)
 		(at 71.12 167.64 180)
@@ -5653,14 +5642,25 @@
 	)
 	(hierarchical_label "VIN"
 		(shape input)
-		(at 59.69 72.39 180)
+		(at 26.67 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f0060a71-a77d-4da3-abe4-3a9c6cc2558f")
+		(uuid "c96106c0-35bc-4b25-8181-98c77cb52510")
+	)
+	(hierarchical_label "PyroPWR"
+		(shape output)
+		(at 201.93 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8de6505-31d5-4e4b-a8d7-640bd234e337")
 	)
 	(symbol
 		(lib_id "power:GND")
