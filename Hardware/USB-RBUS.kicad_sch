@@ -1342,16 +1342,16 @@
 		(uuid "0fb8ac66-d226-45d6-9586-efdb1c84058a")
 	)
 	(junction
-		(at 115.57 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39993df5-f5e1-4bf0-bf41-35cf7c689b78")
-	)
-	(junction
 		(at 110.49 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d795222-4a2d-4253-b678-df663af15b0c")
+	)
+	(junction
+		(at 115.57 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1454824-13fa-450c-bb6d-c259143e5409")
 	)
 	(junction
 		(at 91.44 90.17)
@@ -1445,16 +1445,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 59.69) (xy 124.46 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56a5a4fc-5420-4518-b339-4328d887a800")
-	)
-	(wire
-		(pts
 			(xy 115.57 57.15) (xy 115.57 59.69)
 		)
 		(stroke
@@ -1472,6 +1462,16 @@
 			(type default)
 		)
 		(uuid "81cfcccb-948b-43d4-9450-98b1daa6f430")
+	)
+	(wire
+		(pts
+			(xy 115.57 59.69) (xy 124.46 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1ec82c8-234a-4359-b459-92d459e88850")
 	)
 	(wire
 		(pts
@@ -2229,73 +2229,6 @@
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 118.11 59.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "97d7a901-adc6-4f98-b880-1c1f3743aa6f")
-		(property "Reference" "R24"
-			(at 118.364 54.864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 118.364 57.1754 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aa22cb1c-0d8e-4800-9b0d-c62122237940")
-		)
-		(pin "2"
-			(uuid "f9311d53-f26a-4e0d-aaf6-1c7a7436b488")
-		)
-		(instances
-			(project "Main board"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
-					(reference "R24")
 					(unit 1)
 				)
 			)

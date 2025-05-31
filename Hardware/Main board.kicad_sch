@@ -3687,16 +3687,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 90.17) (xy 69.85 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8caffd66-d429-4a74-9452-74ea78a877ed")
-	)
-	(wire
-		(pts
 			(xy 107.95 187.96) (xy 115.57 187.96)
 		)
 		(stroke
@@ -4465,7 +4455,7 @@
 		)
 		(uuid "386faf3f-2adf-472a-84bf-bd511edf2429")
 	)
-	(label "SDA-BuckBC"
+	(label "SDA"
 		(at 201.93 67.31 180)
 		(effects
 			(font
@@ -4619,6 +4609,16 @@
 		)
 		(uuid "5e7c3a32-8dda-4e6a-9838-c94d1f165575")
 	)
+	(label "Interrupt "
+		(at 64.77 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "623a7371-f9d7-4637-bdfc-ab3727003b1d")
+	)
 	(label "TXD"
 		(at 30.48 54.61 0)
 		(effects
@@ -4628,16 +4628,6 @@
 			(justify left bottom)
 		)
 		(uuid "6732e03e-da7a-48a0-a557-ffb41e062f91")
-	)
-	(label "SCL_I2C"
-		(at 62.23 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "67c1b6e0-512c-499d-b44f-caa44799c78d")
 	)
 	(label "MISO"
 		(at 62.23 105.41 180)
@@ -4699,6 +4689,16 @@
 		)
 		(uuid "78a27346-4b60-4ae3-b0d3-02282ac8767b")
 	)
+	(label "SCL_I2C"
+		(at 139.7 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8783cb45-557a-4a19-861e-02c424858efd")
+	)
 	(label "BOOT"
 		(at 68.58 165.1 180)
 		(effects
@@ -4709,7 +4709,27 @@
 		)
 		(uuid "8cb2cd3a-4ef9-4ae5-b6bc-2b1d16f657d6")
 	)
-	(label "SDA-Photo"
+	(label "Nuke 1"
+		(at 64.77 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90f7e720-7159-4ab7-9e3d-010f7f97b2b6")
+	)
+	(label "SDA"
+		(at 139.7 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "934501a9-6c72-4292-a8f3-50b92e9ae216")
+	)
+	(label "SDA"
 		(at 226.06 88.9 0)
 		(effects
 			(font
@@ -4728,16 +4748,6 @@
 			(justify right bottom)
 		)
 		(uuid "98ebead0-cf4f-46e6-b06b-99edb2b29e1e")
-	)
-	(label "Interrupt "
-		(at 139.7 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9d552179-cd1e-446c-9495-568a5f302d97")
 	)
 	(label "SD_CLK"
 		(at 135.89 115.57 0)
@@ -4871,16 +4881,6 @@
 		)
 		(uuid "ba14c902-0360-40c1-b8c8-6f856f4383ba")
 	)
-	(label "SDA-BuckBC"
-		(at 64.77 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "becef70a-2858-4de2-9221-be2ec557abc8")
-	)
 	(label "CHIP_PU"
 		(at 59.69 67.31 0)
 		(effects
@@ -4921,16 +4921,6 @@
 		)
 		(uuid "c6381e1a-cf2c-4a96-843d-8cc5de410cd5")
 	)
-	(label "Nuke 1"
-		(at 139.7 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c7b25f19-d485-4361-bfb9-6ee564b7167f")
-	)
 	(label "MOSI"
 		(at 201.93 96.52 180)
 		(effects
@@ -4940,16 +4930,6 @@
 			(justify right bottom)
 		)
 		(uuid "ca65aa8f-1b33-4279-af1e-2dc433db5168")
-	)
-	(label "SDA-CS"
-		(at 64.77 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d0932075-0ca3-422b-b89d-b9cac20337da")
 	)
 	(label "SD_DAT3"
 		(at 62.23 87.63 180)
@@ -5021,16 +5001,6 @@
 		)
 		(uuid "e3dee28a-c148-48e9-8c3f-8069e52c3fa6")
 	)
-	(label "SDA-Photo"
-		(at 139.7 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e4784ccf-7b54-47b8-907f-d3ad4ab5ab5e")
-	)
 	(label "Stat"
 		(at 62.23 92.71 180)
 		(effects
@@ -5041,7 +5011,7 @@
 		)
 		(uuid "e90fdce2-5f03-4395-8d74-5269a21358d8")
 	)
-	(label "SDA-CS"
+	(label "SDA"
 		(at 237.49 63.5 0)
 		(effects
 			(font
