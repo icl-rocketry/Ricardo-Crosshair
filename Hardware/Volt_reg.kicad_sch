@@ -3890,6 +3890,16 @@
 		)
 		(uuid "2669e9d9-06ac-4a0d-8cf7-10f974d5ee6f")
 	)
+	(label "Vbuckout"
+		(at 213.36 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "34e2605b-0518-4a98-90fd-d2a5fde92e1b")
+	)
 	(label "AGND"
 		(at 62.23 177.8 0)
 		(effects
@@ -4040,16 +4050,6 @@
 		)
 		(uuid "b6156bad-3054-49ee-a294-a583de05809d")
 	)
-	(label "Vbuckout"
-		(at 201.93 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b83718f4-3dd5-48e7-a684-379c2e6e9825")
-	)
 	(label "AGND"
 		(at 46.99 190.5 0)
 		(effects
@@ -4122,6 +4122,17 @@
 		)
 		(uuid "28b0ea0c-51fa-43f1-9f90-d10c90d6d535")
 	)
+	(hierarchical_label "PyroPWR"
+		(shape output)
+		(at 201.93 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f36e02e-35bd-4242-af9a-db39033e4bd7")
+	)
 	(hierarchical_label "SCL"
 		(shape input)
 		(at 210.82 110.49 270)
@@ -4143,17 +4154,6 @@
 			(justify right)
 		)
 		(uuid "7ca0866d-aa2a-43e2-8cfa-3e5c75df69f1")
-	)
-	(hierarchical_label "PyroPWR"
-		(shape output)
-		(at 213.36 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b7a71607-d5c2-425d-9fea-d5289d34ab8f")
 	)
 	(hierarchical_label "SDA-BuckBC"
 		(shape bidirectional)
