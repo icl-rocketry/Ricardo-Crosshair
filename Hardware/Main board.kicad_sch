@@ -2930,6 +2930,10 @@
 		(uuid "2ca778b3-1e8c-43fe-989b-56ad0bd06781")
 	)
 	(no_connect
+		(at 135.89 74.93)
+		(uuid "2d22be85-cdab-4bea-99c8-36f5bc3807af")
+	)
+	(no_connect
 		(at 135.89 85.09)
 		(uuid "53fe50b1-9989-4a62-b491-0afbf0edecdc")
 	)
@@ -2940,6 +2944,10 @@
 	(no_connect
 		(at 135.89 80.01)
 		(uuid "61294c5c-57ae-41ca-b4d3-2116de5756c4")
+	)
+	(no_connect
+		(at 135.89 130.81)
+		(uuid "63ee44e2-0820-44c5-a4bd-36d4845bb313")
 	)
 	(no_connect
 		(at 135.89 92.71)
@@ -2964,6 +2972,14 @@
 	(no_connect
 		(at 135.89 123.19)
 		(uuid "d53bdb65-9586-496e-89ff-e2edf8bb8d22")
+	)
+	(no_connect
+		(at 135.89 110.49)
+		(uuid "f25a70fb-481c-4e34-b77d-4076cc90c770")
+	)
+	(no_connect
+		(at 135.89 128.27)
+		(uuid "f56d34c8-2cc9-4db5-9300-1247bc6b809a")
 	)
 	(wire
 		(pts
@@ -3257,16 +3273,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 143.51) (xy 200.66 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31a59f40-6140-40df-9e3c-b37774b36244")
-	)
-	(wire
-		(pts
 			(xy 224.79 92.71) (xy 226.06 92.71)
 		)
 		(stroke
@@ -3494,16 +3500,6 @@
 			(type default)
 		)
 		(uuid "598483d5-163b-475c-83a1-684fb184809e")
-	)
-	(wire
-		(pts
-			(xy 194.31 140.97) (xy 200.66 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b3116e3-eaa6-46c8-8a94-4cd4fb18b990")
 	)
 	(wire
 		(pts
@@ -4839,16 +4835,6 @@
 		)
 		(uuid "7681a2b7-a93e-4810-9164-c7d32067ebf0")
 	)
-	(label "GPIO15"
-		(at 194.31 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "77d3e9f3-045e-41d5-8c98-2911554e6a8d")
-	)
 	(label "SD_DET"
 		(at 139.7 95.25 0)
 		(effects
@@ -4948,16 +4934,6 @@
 			(justify right bottom)
 		)
 		(uuid "a28684b0-7eee-44ec-8071-35e98e91a6f7")
-	)
-	(label "GPIO16"
-		(at 194.31 143.51 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a73bdd87-0626-4ff8-9406-3cfec13875ee")
 	)
 	(label "GPIO9"
 		(at 62.23 92.71 180)
@@ -5161,16 +5137,6 @@
 		)
 		(uuid "cc31bf35-94ad-4981-888d-c744d391365e")
 	)
-	(label "GPIO15"
-		(at 135.89 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d38c752d-698a-4776-8bb8-afcb0832364b")
-	)
 	(label "CAN_RX"
 		(at 115.57 182.88 0)
 		(effects
@@ -5270,16 +5236,6 @@
 			(justify left bottom)
 		)
 		(uuid "f04f6464-b2e7-4931-9bfb-99250f4c97e9")
-	)
-	(label "GPIO16"
-		(at 135.89 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f0fcab55-288e-4198-912f-3aeff7e4d57d")
 	)
 	(label "TXD"
 		(at 17.78 21.59 0)
@@ -9747,26 +9703,6 @@
 		(pin "GPIO7" bidirectional
 			(at 200.66 130.81 180)
 			(uuid "c9b45d74-e27a-42e6-a2d9-1b43a59ca515")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO15" bidirectional
-			(at 200.66 140.97 180)
-			(uuid "a668bfff-e3c5-461b-b7ea-06783671480a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO16" bidirectional
-			(at 200.66 143.51 180)
-			(uuid "a32eae7e-7e70-4258-9a84-4ee6d961a37b")
 			(effects
 				(font
 					(size 1.27 1.27)

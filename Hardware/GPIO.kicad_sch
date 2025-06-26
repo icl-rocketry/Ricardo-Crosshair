@@ -798,6 +798,14 @@
 		(color 0 0 0 0)
 		(uuid "f1fcb42b-1f17-444f-b38d-bfdaca334a85")
 	)
+	(no_connect
+		(at 137.16 80.01)
+		(uuid "b5b26c1e-6fa7-4142-b644-adf13a85e7ce")
+	)
+	(no_connect
+		(at 106.68 80.01)
+		(uuid "c51259fb-b21b-4dfb-932a-6c08629db982")
+	)
 	(wire
 		(pts
 			(xy 161.29 120.65) (xy 165.1 120.65)
@@ -870,17 +878,6 @@
 		)
 		(uuid "42af6c9f-57dd-46b5-8efe-49229ad5b11f")
 	)
-	(hierarchical_label "GPIO16"
-		(shape bidirectional)
-		(at 146.05 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5992338c-0937-43bc-b010-e34a808dc952")
-	)
 	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 137.16 82.55 0)
@@ -902,17 +899,6 @@
 			(justify right)
 		)
 		(uuid "647a276a-f675-4405-a54b-8d82a8a31890")
-	)
-	(hierarchical_label "GPIO15"
-		(shape bidirectional)
-		(at 101.6 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "820a6ae0-b655-47fb-8317-dda147a245cb")
 	)
 	(hierarchical_label "GPIO9"
 		(shape bidirectional)
