@@ -900,6 +900,10 @@
     [
       "9b3767b0-c58a-45b6-92e7-d7216660795a",
       "SD-card"
+    ],
+    [
+      "4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061",
+      "GPIO"
     ]
   ],
   "text_variables": {}
