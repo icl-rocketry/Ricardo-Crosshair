@@ -2683,7 +2683,7 @@
 	)
 	(text "Potentially 2.2uH - check!"
 		(exclude_from_sim no)
-		(at 151.13 168.656 0)
+		(at 152.4 166.116 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5996,15 +5996,15 @@
 				)
 			)
 		)
-		(property "Value" "4.7uH"
-			(at 133.604 167.64 0)
+		(property "Value" "PA5432472NLT"
+			(at 144.78 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
+		(property "Footprint" "iclr:PA5432472NLT"
 			(at 137.16 168.91 0)
 			(effects
 				(font
@@ -6023,6 +6023,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Inductance" "4.7uH"
 			(at 137.16 168.91 0)
 			(effects
 				(font
