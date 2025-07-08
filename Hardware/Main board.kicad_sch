@@ -2977,10 +2977,6 @@
 		(at 135.89 110.49)
 		(uuid "f25a70fb-481c-4e34-b77d-4076cc90c770")
 	)
-	(no_connect
-		(at 135.89 128.27)
-		(uuid "f56d34c8-2cc9-4db5-9300-1247bc6b809a")
-	)
 	(wire
 		(pts
 			(xy 201.93 52.07) (xy 203.2 52.07)
@@ -3453,7 +3449,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 135.89) (xy 143.51 127)
+			(xy 146.05 135.89) (xy 146.05 127)
 		)
 		(stroke
 			(width 0)
@@ -3863,7 +3859,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 135.89) (xy 143.51 135.89)
+			(xy 135.89 135.89) (xy 146.05 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4063,7 +4059,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 127) (xy 156.21 127)
+			(xy 146.05 127) (xy 156.21 127)
 		)
 		(stroke
 			(width 0)
@@ -4755,6 +4751,16 @@
 		)
 		(uuid "5e7c3a32-8dda-4e6a-9838-c94d1f165575")
 	)
+	(label "BatteryV_LOG"
+		(at 135.89 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60867915-3f19-47b3-8650-6ba53f0cfb2b")
+	)
 	(label "Interrupt "
 		(at 64.77 118.11 180)
 		(effects
@@ -5298,6 +5304,16 @@
 			(justify right bottom)
 		)
 		(uuid "fc6c5c02-48f8-415b-a26a-8bcf64dda873")
+	)
+	(label "BatteryV_LOG"
+		(at 29.21 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ff9cf73b-231d-425d-9a66-98ba937d2df1")
 	)
 	(global_label "Cell_+"
 		(shape input)
@@ -9621,6 +9637,16 @@
 		(pin "Cell_Switch" input
 			(at 29.21 110.49 180)
 			(uuid "b4eb44bd-91d9-4033-ad5c-3e3262db240d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BatteryV_LOG" input
+			(at 29.21 113.03 180)
+			(uuid "e017f2c9-65b2-439a-88ef-0083aa0c28f9")
 			(effects
 				(font
 					(size 1.27 1.27)
