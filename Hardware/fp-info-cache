@@ -1,4 +1,4 @@
-24998956784339745
+25014751500306722
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99687,6 +99687,13 @@ DDTCCRUB_COTS_Charger
 4
 4
 iclr
+DIOM5436X261N
+DO-214AA (SMB J-Bend)
+TVS Diode (Uni-directional)
+0
+2
+2
+iclr
 DIOM6959X245N
 
 
@@ -99728,6 +99735,13 @@ Inductor
 0
 2
 2
+iclr
+FDMS86181
+FDMS86181-3
+Transistor
+0
+9
+9
 iclr
 GCT_USB4110-GF-A_REVB
 
@@ -99889,6 +99903,13 @@ MOLEX_78646-3001
 0
 14
 14
+iclr
+MP2338GTLZ
+MP2338GTL-Z-2
+Integrated Circuit
+0
+8
+8
 iclr
 MP28167GQ-A-P
 
@@ -100142,6 +100163,13 @@ SOIC127P600X170-9N
 15
 15
 iclr
+SON45P200X200X80-9N-D
+8-Lead Plastic DFN (2mm × 2mm)
+Integrated Circuit
+0
+9
+9
+iclr
 SON50P300X300X80-11N-D
 10-LEAD (3mm s 3mm) PLASTIC DFN*-*-
 Integrated Circuit
@@ -100165,6 +100193,13 @@ Integrated Circuit
 iclr
 SON65P300X300X100-9N-D
 8 lead
+Integrated Circuit
+0
+9
+9
+iclr
+SON95P500X400X100-9N
+IXDD604D2TR
 Integrated Circuit
 0
 9
@@ -100254,6 +100289,13 @@ Inductor
 2
 2
 iclr
+SS3P3M384A
+SS3P3-M3/84A-1
+Schottky Diode
+0
+2
+2
+iclr
 SiC437BEDT1GE3
 SiC437BED-T1-GE3-7
 Integrated Circuit
@@ -100267,6 +100309,13 @@ resistor
 0
 2
 2
+iclr
+TL1963AQKTTRQ1
+KTT (R-PSFM-G5
+Integrated Circuit
+0
+6
+6
 iclr
 TO127P457X1016X2052-7P
 
@@ -100365,6 +100414,20 @@ VSON 10 Thermal on 11 3x3mm Pitch 0.5mm
 0
 17
 11
+iclr
+WE-PD_1260
+
+
+0
+2
+2
+iclr
+WE-PD_1260P
+
+
+0
+2
+2
 iclr
 Write_Pad
 

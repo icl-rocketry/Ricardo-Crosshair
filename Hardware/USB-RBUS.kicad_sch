@@ -1794,7 +1794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fb327d6-d9d8-46b3-bd02-0d887652dedc")
-		(property "Reference" "RBUSLED"
+		(property "Reference" "RBUSLED1"
 			(at 179.07 49.403 0)
 			(effects
 				(font
@@ -1846,7 +1846,7 @@
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
-					(reference "RBUSLED")
+					(reference "RBUSLED1")
 					(unit 1)
 				)
 			)
