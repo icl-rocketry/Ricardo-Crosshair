@@ -1507,7 +1507,7 @@
 		)
 		(uuid "fd178049-6deb-45ad-8f31-ef0d5f4a1c37")
 	)
-	(hierarchical_label "SDO"
+	(hierarchical_label "SDO_Baro"
 		(shape output)
 		(at 119.38 85.09 180)
 		(effects
@@ -1518,7 +1518,7 @@
 		)
 		(uuid "33d5d679-aca0-4494-b3af-7e0b55c7d3b2")
 	)
-	(hierarchical_label "CSB"
+	(hierarchical_label "CS_Baro"
 		(shape input)
 		(at 119.38 77.47 180)
 		(effects
@@ -1529,7 +1529,7 @@
 		)
 		(uuid "65f89e85-58b3-4740-87f9-ad58c15d5640")
 	)
-	(hierarchical_label "SDI"
+	(hierarchical_label "SDI_Baro"
 		(shape bidirectional)
 		(at 119.38 82.55 180)
 		(effects

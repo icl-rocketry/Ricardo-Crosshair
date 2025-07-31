@@ -799,12 +799,12 @@
 		(uuid "f1fcb42b-1f17-444f-b38d-bfdaca334a85")
 	)
 	(no_connect
-		(at 137.16 80.01)
-		(uuid "b5b26c1e-6fa7-4142-b644-adf13a85e7ce")
+		(at 137.16 85.09)
+		(uuid "378d81b4-5d12-49a0-8272-dae26de1a352")
 	)
 	(no_connect
-		(at 106.68 80.01)
-		(uuid "c51259fb-b21b-4dfb-932a-6c08629db982")
+		(at 106.68 87.63)
+		(uuid "b5298f66-64f8-4f48-8659-814d689cda50")
 	)
 	(wire
 		(pts
@@ -856,6 +856,28 @@
 		)
 		(uuid "a21cd426-dec7-4a01-9a7b-16bfe579d847")
 	)
+	(hierarchical_label "GPIO10"
+		(shape bidirectional)
+		(at 106.68 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1a5cbbc0-e16a-49f7-a65a-24383550eb13")
+	)
+	(hierarchical_label "GPIO9"
+		(shape bidirectional)
+		(at 137.16 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "423b9340-535b-44a3-9a8b-00ff2318e11b")
+	)
 	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 157.48 125.73 270)
@@ -866,28 +888,6 @@
 			(justify right)
 		)
 		(uuid "426e97a5-648e-4f92-ab43-c29d937565e0")
-	)
-	(hierarchical_label "GPIO8"
-		(shape bidirectional)
-		(at 106.68 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42af6c9f-57dd-46b5-8efe-49229ad5b11f")
-	)
-	(hierarchical_label "GPIO7"
-		(shape bidirectional)
-		(at 137.16 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "617df9dc-e8db-45fd-8b04-559fe2c8eb11")
 	)
 	(hierarchical_label "GPIO9"
 		(shape bidirectional)
@@ -922,6 +922,17 @@
 		)
 		(uuid "a3401c77-a6cd-445d-8084-8b01c9d5288f")
 	)
+	(hierarchical_label "GPIO7"
+		(shape bidirectional)
+		(at 106.68 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "af0ad836-9ff1-4e81-bc59-08dabfc5ccbf")
+	)
 	(hierarchical_label "GPIO8"
 		(shape bidirectional)
 		(at 179.07 73.66 180)
@@ -944,28 +955,6 @@
 		)
 		(uuid "bd00c60d-d453-4b89-b39e-0a9d78df713f")
 	)
-	(hierarchical_label "GPIO10"
-		(shape bidirectional)
-		(at 106.68 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bd34beea-62f5-4f41-bb48-9de0d833f25a")
-	)
-	(hierarchical_label "GPIO9"
-		(shape bidirectional)
-		(at 137.16 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bd6b1094-6d7b-48df-92b2-b6207bf7fef2")
-	)
 	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 179.07 71.12 180)
@@ -976,6 +965,17 @@
 			(justify right)
 		)
 		(uuid "c08b32b1-d628-4a78-9afb-f11ebeefad79")
+	)
+	(hierarchical_label "GPIO8"
+		(shape bidirectional)
+		(at 137.16 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c25d2c04-c2fc-4b23-8ccf-d9ebef9716c7")
 	)
 	(hierarchical_label "GPIO10"
 		(shape bidirectional)
@@ -1063,7 +1063,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d669c95-a524-4de3-999b-23e617a39baa")
-		(property "Reference" "ENJUMPER2"
+		(property "Reference" "GPIO_7/8"
 			(at 185.42 67.31 90)
 			(effects
 				(font
@@ -1117,7 +1117,7 @@
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061"
-					(reference "ENJUMPER2")
+					(reference "GPIO_7/8")
 					(unit 1)
 				)
 			)
@@ -1264,7 +1264,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9dea85a2-e7d8-4e27-80b0-022bd3652c66")
-		(property "Reference" "ENJUMPER3"
+		(property "Reference" "GPIO_9/10"
 			(at 208.28 68.58 90)
 			(effects
 				(font
@@ -1318,7 +1318,7 @@
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061"
-					(reference "ENJUMPER3")
+					(reference "GPIO_9/10")
 					(unit 1)
 				)
 			)
@@ -1333,7 +1333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a23e30ed-8ab7-4657-907a-590636cf0dee")
-		(property "Reference" "ENJUMPER4"
+		(property "Reference" "3V3_GND1"
 			(at 184.15 93.98 90)
 			(effects
 				(font
@@ -1387,7 +1387,7 @@
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061"
-					(reference "ENJUMPER4")
+					(reference "3V3_GND1")
 					(unit 1)
 				)
 			)

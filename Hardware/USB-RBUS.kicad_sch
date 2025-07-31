@@ -1348,10 +1348,10 @@
 		(uuid "9d795222-4a2d-4253-b678-df663af15b0c")
 	)
 	(junction
-		(at 115.57 59.69)
+		(at 110.49 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b1454824-13fa-450c-bb6d-c259143e5409")
+		(uuid "db30fafa-8fc5-4b52-8f08-a17ca46f47a0")
 	)
 	(junction
 		(at 91.44 90.17)
@@ -1362,6 +1362,10 @@
 	(no_connect
 		(at 110.49 82.55)
 		(uuid "6450292c-c6d6-4f33-be5d-6e348e59d1df")
+	)
+	(no_connect
+		(at 110.49 80.01)
+		(uuid "647bbd24-91bc-408c-93cb-cc246fad9b05")
 	)
 	(wire
 		(pts
@@ -1395,16 +1399,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 59.69) (xy 115.57 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d3bd3d9-6e5a-4812-8d15-bc2858e72855")
-	)
-	(wire
-		(pts
 			(xy 110.49 66.04) (xy 110.49 64.77)
 		)
 		(stroke
@@ -1435,23 +1429,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 57.15) (xy 115.57 57.15)
+			(xy 110.49 57.15) (xy 110.49 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "530b6fa8-0000-4ca7-980c-2be66ecc4546")
+		(uuid "47cc8b75-ee9a-4042-82e0-ef06232c14e5")
 	)
 	(wire
 		(pts
-			(xy 115.57 57.15) (xy 115.57 59.69)
+			(xy 110.49 58.42) (xy 111.76 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d61acf6-d7f5-4427-ba91-58740a8e0205")
+		(uuid "52ea2cde-9ba8-4361-afd7-48d64b10a602")
 	)
 	(wire
 		(pts
@@ -1465,13 +1459,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 59.69) (xy 124.46 59.69)
+			(xy 110.49 58.42) (xy 110.49 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1ec82c8-234a-4359-b459-92d459e88850")
+		(uuid "8b243c01-285b-4830-81d4-547c6d7562d7")
 	)
 	(wire
 		(pts
@@ -1617,7 +1611,7 @@
 	)
 	(global_label "RBUS_uC_V"
 		(shape input)
-		(at 113.03 46.99 90)
+		(at 111.76 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1625,9 +1619,9 @@
 			)
 			(justify left)
 		)
-		(uuid "ef81fb65-7fa4-435e-b39c-b52f079dc559")
+		(uuid "d80482c4-dd40-489f-b350-589a80146141")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 34.1362 90)
+			(at 124.6138 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1658,72 +1652,6 @@
 			(justify right)
 		)
 		(uuid "7fa7020f-cc8c-424e-b862-9e75b95febec")
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 110.49 80.01 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d853702-26d5-4aa8-9a70-b06626f7beb8")
-		(property "Reference" "#PWR059"
-			(at 106.68 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+16.8V"
-			(at 116.84 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18ee3536-ce78-4370-b469-c840ec645569")
-		)
-		(instances
-			(project "Main board"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -1866,7 +1794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fb327d6-d9d8-46b3-bd02-0d887652dedc")
-		(property "Reference" "USBLED2"
+		(property "Reference" "RBUSLED"
 			(at 179.07 49.403 0)
 			(effects
 				(font
@@ -1882,7 +1810,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 179.07 54.61 90)
 			(effects
 				(font
@@ -1918,7 +1846,7 @@
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
-					(reference "USBLED2")
+					(reference "RBUSLED")
 					(unit 1)
 				)
 			)
@@ -1991,16 +1919,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 124.46 59.69 0)
+		(lib_id "power:+12V")
+		(at 113.03 46.99 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8656ba15-e92e-41e9-b7a0-59138e6f9dbb")
-		(property "Reference" "#PWR060"
-			(at 124.46 66.04 0)
+		(uuid "7d0641a1-e267-456e-90b0-3afd37a35795")
+		(property "Reference" "#PWR067"
+			(at 113.03 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,17 +1937,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 129.54 62.23 0)
+		(property "Value" "+16.8V"
+			(at 117.602 45.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 59.69 0)
+			(at 113.03 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2027,7 +1955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 59.69 0)
+			(at 113.03 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +1964,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 59.69 0)
+			(at 113.03 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,12 +1973,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f19b0a2c-1a1f-4733-9df7-be9ad1311911")
+			(uuid "6abeb99a-6a5d-4679-b121-67a91739611d")
 		)
 		(instances
 			(project "Main board"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3151accb-1938-449b-8397-baa4e59e1635"
-					(reference "#PWR060")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
