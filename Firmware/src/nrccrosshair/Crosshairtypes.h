@@ -5,6 +5,7 @@
 #include <libriccore/systemstatus/systemstatus.h>
 #include <libriccore/fsm/state.h>
 #include <libriccore/fsm/statemachine.h>
+#include <Sensors/sensorStructs.h>
 
 /**
  * @brief Templated struct with type aliases inside to provide convient type access. Some of the template paramters might require
@@ -42,6 +43,7 @@ namespace Types
     using LocalPyroMap_t = std::array<LocalPyroAdapter_t *, 1>;
 };
 
+class NRCCrosshair;
 namespace Crosshair
 {
     struct DefaultStateInit
@@ -54,4 +56,12 @@ namespace Crosshair
         Types::CrosshairTypes::SystemStatus_t &crosshairstatus;
         Types::LocalPyroAdapter_t &PyroAdapter;
     };
+        struct Sensors
+    {
+        Types::CrosshairTypes::SystemStatus_t &crosshairstatus;
+        SensorStructs::BARO_t &Baro;
+        SensorStructs::ADC_V_RAIL_t &Logicrail;
+        SensorStructs::INA_V_RAIL_t &QDrail;
+        SensorStructs::INA_V_RAIL_t &Pyrorail;   
+    }
 }

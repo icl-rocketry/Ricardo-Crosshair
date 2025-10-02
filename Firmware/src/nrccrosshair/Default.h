@@ -19,7 +19,6 @@
 #include "Config/systemflags_config.h"
 #include "Config/types.h"
 #include "Crosshairtypes.h"
-#include "nrccrosshair.h"
 
 class Default : public Types::Crosshairtypes::State_t
 {
@@ -29,7 +28,7 @@ class Default : public Types::Crosshairtypes::State_t
          * we want to control the available commands, we need to pass in the command handler from the riccoresystem.
          * 
          */
-        Default(Greg::DefaultStateInit& DefaultInitParams);
+        Default(Crosshair::DefaultStateInit& DefaultInitParams);
 
         /**
          * @brief Perform any initialization required for the state
@@ -43,7 +42,7 @@ class Default : public Types::Crosshairtypes::State_t
          * 
          * @return std::unique_ptr<State> 
          */
-        Types::EREGTypes::State_ptr_t update() override;
+        Types::CrosshairTypes::State_ptr_t update() override;
 
         /**
          * @brief Exit state actions, cleanup any files opened, save data that kinda thing.
@@ -53,6 +52,5 @@ class Default : public Types::Crosshairtypes::State_t
 
     private:
 
-        Types::ServoAdapter_t& m_regAdapter;
-        uint32_t m_regClosedAngle;
+        Crosshair::DefaultStateInit& m_DefaultInitParams;
 };
