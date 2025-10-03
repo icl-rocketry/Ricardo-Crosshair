@@ -1,24 +1,66 @@
-#include "crosshair.h"
+#include "nrccrosshair.h"
 #include <libriccore/commands/simplecommandpacket.h>
 #include <libriccore/riccorelogging.h>
-#include "Config/systemflags_config.h"
 
-#include "States/Default.h"
-#include "States/Liftoff.h"
-#include "States/Apogee.h"
-#include "States/Separation.h"
-#include "States/Pyroready.h"
-#include "States/Debug.h"
+
+#include "Default.h"
+#include "Liftoff.h"
+#include "Apogee.h"
+#include "Separation.h"
+#include "Pyroready.h"
+#include "Debug.h"
+
+NRCCrosshair::NRCCrosshair(RnpNetworkManager& networkmanager):
+                    NRCRemoteActuatorBase(networkmanager),
+                    _networkmanager(networkmanager),
+                    //m_currSensor(),
+                    m_QDrail(m_QDrail, PinMap::QDV, GeneralConfig::LOGIC_r1, GeneralConfig::LOGIC_r2),
+                    m_pyro(PinMap::PyroNuke, PinMap::PyroCont, _networkmanager),
+                    m_pyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})
+
+{}; 
+
 
 void NRCCrosshair::setup()
 {
+    m_pyro.setup();
+    m_QDrail.setup();
     // Start FSM in default state
-    m_StateMachine.initalize(std::make_unique<Default>(m_DefaultInitParams));
+    m_StateMachine.initalize(std::make_unique<Default>(m_DefaultInitParams, *this));
 }
+
 
 void NRCCrosshair::update()
 {
+    _value = m_CrosshairStatus.getStatus()
+    float altitude = m_BaroData.alt;
     m_StateMachine.update();
+    m_QDrail.update();
+    //m_currSensor.update();
+}
+
+void NRCCrosshair::DeployAltitude(){
+    if (baroDara.alt > 450 && m_below500)
+    {
+        m_baroCounter++;
+        m_below = false;
+    }
+    else if (m_BaroData.alt < 500){
+        m_below500 = true;
+    }
+
+}
+
+void NRCCrosshair::arm_base(int32_t arg){
+    m_pyroAdapter.arm(arg);
+
+    if (m_pyroAdapter.getState(.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))&& isBaroApogeeReady())
+    {
+        NRCRemoteActuatorBase::arm_base(arg);
+    }
+    else{
+        m_pyroAdapter.disarm()
+    }
 }
 
 void NRCCrosshair::execute_impl(packetptr_t packetptr)

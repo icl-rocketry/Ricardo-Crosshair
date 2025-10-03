@@ -1,4 +1,4 @@
-#include "dps310.h"
+#include "dps368.h"
 
 #include <libriccore/riccorelogging.h>
 
@@ -13,7 +13,7 @@
 
 #include "sensorStructs.h"
 
-DPS310::DPS310(SPIClass &spi, Types::CoreTypes::SystemStatus_t &systemstatus, uint8_t cs) : Dps3xx(),
+DPS368::DPS368(SPIClass &spi, Types::CoreTypes::SystemStatus_t &systemstatus, uint8_t cs) : Dps3xx(),
                                                                                             _spi(spi),
                                                                                             _systemstatus(systemstatus),
                                                                                             _cs(cs),
@@ -21,7 +21,7 @@ DPS310::DPS310(SPIClass &spi, Types::CoreTypes::SystemStatus_t &systemstatus, ui
 {
 }
 
-void DPS310::setup()
+void DPS368::setup()
 {
     //! initial dummy transaction for some random inexplicable reason
     //TODO if you are bored try to fix this, or dont...
@@ -37,7 +37,7 @@ void DPS310::setup()
    
     if (m_productID != 0 || m_revisionID != 1)
     {
-        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS310 failed to respond with expected prod and rev ID, Prod Id:" + std::to_string(m_productID) + ", Rev Id: " + std::to_string(m_revisionID));
+        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS368 failed to respond with expected prod and rev ID, Prod Id:" + std::to_string(m_productID) + ", Rev Id: " + std::to_string(m_revisionID));
         return;
 
     }
@@ -46,7 +46,7 @@ void DPS310::setup()
 
     if (error)
     {
-        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS310 failed to start with code: " + std::to_string(error));
+        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS368 failed to start with code: " + std::to_string(error));
         return;
     }
     // start measure both cont enables FiFo, however we want to disable FiFo so that the result register
@@ -54,18 +54,18 @@ void DPS310::setup()
     //  In reality we are likeyl polling this sensor alot quicker than it can update.
     if (disableFIFO())
     {
-        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS310 failed to disable FiFo!");
+        _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS368 failed to disable FiFo!");
         return;
     }
 
     loadDPSCalibrationValues();
 
-    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("DPS310 Initialized!");
+    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("DPS368 Initialized!");
     
     _initialized = true;
 }
 
-void DPS310::update(SensorStructs::BARO_t &data)
+void DPS368::update(SensorStructs::BARO_t &data)
 {
     if (!_initialized)
     {
@@ -77,7 +77,7 @@ void DPS310::update(SensorStructs::BARO_t &data)
     data.alt = toAltitude(data.press);
 }
 
-void DPS310::calibrateBaro()
+void DPS368::calibrateBaro()
 {
     if (!_initialized)
     {
@@ -91,7 +91,7 @@ void DPS310::calibrateBaro()
     writeDPSCalibrationValues();
 }
 
-float DPS310::toAltitude(const float &pressure)
+float DPS368::toAltitude(const float &pressure)
 {
 
     constexpr float R = 287.052;     // specific gas constant R*/M0
@@ -101,13 +101,13 @@ float DPS310::toAltitude(const float &pressure)
     return refTemp / t_grad * (1 - exp((t_grad * R / g) * log(pressure / refPress)));
 }
 
-void DPS310::readDPS(float &pressure, float &temperature)
+void DPS368::readDPS(float &pressure, float &temperature)
 {
     constexpr int PSR_B2 = 0x00;
     constexpr int RW_BYTE = 0x80;
 
     constexpr size_t numbytes = 6;
-    // this method assumes the dps310 is in background mode
+    // this method assumes the DPS368 is in background mode
     std::array<uint8_t, numbytes> buffer;
 
     // for some reason the dps requires a 'dummy' transaction. Probbaly due to the change of clock polarity messing clocking the data out or somethin like that
@@ -143,7 +143,7 @@ void DPS310::readDPS(float &pressure, float &temperature)
 }
 
 
-void DPS310::writeDPSCalibrationValues(){
+void DPS368::writeDPSCalibrationValues(){
     Preferences pref;
 
     if (!pref.begin("DPS")){
@@ -156,7 +156,7 @@ void DPS310::writeDPSCalibrationValues(){
 }
 
 
-void DPS310::loadDPSCalibrationValues(){
+void DPS368::loadDPSCalibrationValues(){
     Preferences pref;
 
     if (!pref.begin("DPS", true)){

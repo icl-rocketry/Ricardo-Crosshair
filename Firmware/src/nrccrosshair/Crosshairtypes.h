@@ -62,6 +62,6 @@ namespace Crosshair
         SensorStructs::BARO_t &Baro;
         SensorStructs::ADC_V_RAIL_t &Logicrail;
         SensorStructs::INA_V_RAIL_t &QDrail;
-        SensorStructs::INA_V_RAIL_t &Pyrorail;   
+        SensorStructs::INA_V_RAIL_t &PyroCurrent;   
     }
 }

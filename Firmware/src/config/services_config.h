@@ -19,7 +19,9 @@ namespace Services{
      * 
      */
     enum class ID:uint8_t{
-        Serivce1 = 3
+        Serivce1 = 3,
+        Crosshair = 10,
+        Pyro = 11
     };
 
 };
