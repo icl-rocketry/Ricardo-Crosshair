@@ -1,0 +1,84 @@
+#include "Separation.h"
+
+#include <memory>
+
+#include <libriccore/fsm/state.h>
+#include <libriccore/systemstatus/systemstatus.h>
+#include <libriccore/commands/commandhandler.h>
+#include <libriccore/riccorelogging.h>
+
+#include "Config/systemflags_config.h"
+#include "Config/types.h"
+#include <librrc/Local/remoteactuatoradapter.h>
+
+#include "system.h"
+
+Separation::Separation(Crosshair::PyroReadyInit& PyroInitParams,RnpNetworkManager& networkmanager, NRCCrosshair& Crosshair):
+State(CROSSHAIR_FLAGS::STATE_SEPARATION,PyroInitParams.crosshairstatus),
+m_PyroInitParams(PyroInitParams),
+m_networkmanager(networkmanager),
+m_Crosshair(Crosshair),
+m_PyroAdapter(PyroInitParams.m_pyroAdapter)
+
+{};
+
+void Separation::initialize()
+{
+    Types::CrosshairTypes::State_t::initialize();
+
+    m_PyroAdapter.arm(0); 
+
+    m_IgnitionCalls = 0; //Initialise Ignition calls
+    m_ignitionTime = millis();
+   
+  
+  
+};
+
+Types::CrosshairTypes::State_ptr_t Separation::update()
+{
+
+
+
+
+
+// Check ignition calls and fire pyro accordingly
+
+if (m_IgnitionCalls > 0) //Ignition has been called already
+{
+    if(millis() - m_ignitionTime < m_pyroTime)
+    {
+        return nullptr;
+    }
+    else
+    {
+        m_PyroAdapter.disarm();
+        return std::make_unique<Default>(m_PyroInitParams, m_networkmanager, m_Crosshair);
+    }
+  
+}
+
+
+/*
+    When barocounter is >= 1, and Separation state is true, pyro will fire
+    barcounter only adds once altitude is greater than 450m, 
+    Separation state is only true when separation has occured,
+    Pyro will only be armed
+    need to think abt whether there is armed flag or smth from the m_Crosshair.m_pyroAdapter i can pass in
+*/
+else if (m_IgnitionCalls == 0 && m_Crosshair.m_pyroAdapter.)
+{
+    
+    m_Crosshair.m_pyroAdapter.execute(500);
+    m_IgnitionCalls++;
+
+
+}
+
+    return nullptr;
+}
+
+void Separation::exit()
+{
+    Types::CrosshairTypes::State_t::exit();
+};

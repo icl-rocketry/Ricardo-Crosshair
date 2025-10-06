@@ -19,11 +19,9 @@ enum class CROSSHAIR_FLAGS : uint32_t
 {
     // state flags
     STATE_DEFAULT = (1 << 0),
-    STATE_LIFTOFF = (1 << 1),           //Command recieved from pickle
-    STATE_APOGEE = (1 << 2),            //Command recieved from pickle
-    STATE_SEPARATION = (1 << 3),        //Command recieved from pickle
-    STATE_PYROREADY = (1 << 4),
-    STATE_DEBUG = (1 << 5),  
+    STATE_ARMED = (1 << 1),           //Command recieved from pickle
+    STATE_SEPARATION = (1 << 3),      //Rbus removed
+    STATE_DEBUG = (1 << 4),  
 };
 
 template <typename CROSSHAIR_FLAGS_T>
@@ -55,13 +53,5 @@ namespace Crosshair
     {
         Types::CrosshairTypes::SystemStatus_t &crosshairstatus;
         Types::LocalPyroAdapter_t &PyroAdapter;
-    };
-        struct Sensors
-    {
-        Types::CrosshairTypes::SystemStatus_t &crosshairstatus;
-        SensorStructs::BARO_t &Baro;
-        SensorStructs::ADC_V_RAIL_t &Logicrail;
-        SensorStructs::INA_V_RAIL_t &QDrail;
-        SensorStructs::INA_V_RAIL_t &PyroCurrent;   
     }
 }

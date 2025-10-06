@@ -12,10 +12,10 @@
 
 NRCCrosshair::NRCCrosshair(RnpNetworkManager& networkmanager):
                     NRCRemoteActuatorBase(networkmanager),
-                    _networkmanager(networkmanager),
+                    m_networkmanager(networkmanager),
                     //m_currSensor(),
                     m_QDrail(m_QDrail, PinMap::QDV, GeneralConfig::LOGIC_r1, GeneralConfig::LOGIC_r2),
-                    m_pyro(PinMap::PyroNuke, PinMap::PyroCont, _networkmanager),
+                    m_pyro(PinMap::PyroNuke, PinMap::PyroCont, m_networkmanager),
                     m_pyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})
 
 {}; 
@@ -39,28 +39,57 @@ void NRCCrosshair::update()
     //m_currSensor.update();
 }
 
-void NRCCrosshair::DeployAltitude(){
-    if (baroDara.alt > 450 && m_below500)
+void NRCCrosshair::DeployAltitude() //function to check barometer height for arming and firing
+{
+    if (baroDara.alt > 450 && m_below500 && m_baroCounter = 0)
+    {
+        m_baroCounter++; 
+        delay(500);
+        m_below500 = false;
+    }
+    else if (m_BaroData.alt < 500)
+    {
+        m_below500 = true;
+    }
+    else if (baroDara.alt > 450 && m_below500 && m_baroCounter = 0)
     {
         m_baroCounter++;
-        m_below = false;
-    }
-    else if (m_BaroData.alt < 500){
-        m_below500 = true;
+        m_below500 = false;
     }
 
 }
 
-void NRCCrosshair::arm_base(int32_t arg){
+void NRCCrosshair::disarm_base()
+{
+    m_pyroAdapter.disarm();
+    NRCRemoteActuatorBase::disarm_base();
+
+    m_StateMachine.initalize(std::make_unique<Default>(m_DefaultInitParams, *this));
+}
+
+
+void NRCCrosshair::arm_base(int32_t arg)
+{
     m_pyroAdapter.arm(arg);
+    m_Baro.calibrateBaro();
 
     if (m_pyroAdapter.getState(.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))&& isBaroApogeeReady())
     {
         NRCRemoteActuatorBase::arm_base(arg);
     }
     else{
-        m_pyroAdapter.disarm()
+        m_pyroAdapter.disarm();
     }
+}
+
+void NRCCrosshair::serviceSetup()
+{
+    m_networkmanager.registerService(Pyroservice,Pyro.getThisNetworkCallback());
+}
+
+void NRCCrosshair::unregisterServices()
+{
+    m_networkmanager.unregisterService(Pyroservice);
 }
 
 void NRCCrosshair::execute_impl(packetptr_t packetptr)
@@ -69,29 +98,24 @@ void NRCCrosshair::execute_impl(packetptr_t packetptr)
 
     switch (cmd.arg)
     {
-    case 1: // Liftoff
+    case 1: // Default
         if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_DEFAULT)) break;
-        m_StateMachine.changeState(std::make_unique<Liftoff>(m_DefaultInitParams, m_baro));
+        m_StateMachine.changeState(std::make_unique<Default>(m_DefaultInitParams, m_networkmanager, *this));
         break;
 
-    case 2: // Apogee
-        if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_LIFTOFF)) break;
-        m_StateMachine.changeState(std::make_unique<Apogee>(m_DefaultInitParams));
+    case 2: // Armed
+        if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_ARMED)) break;
+        m_StateMachine.changeState(std::make_unique<Armed>(m_PyroInitParams, m_networkmanager, *this));
         break;
 
     case 3: // Separation
-        if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_APOGEE)) break;
-        m_StateMachine.changeState(std::make_unique<Separation>(m_PyroInitParams));
-        break;
-
-    case 4: // PyroReady
         if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_SEPARATION)) break;
-        m_StateMachine.changeState(std::make_unique<PyroReady>(m_PyroInitParams));
+        m_StateMachine.changeState(std::make_unique<Separation>(m_PyroInitParams, m_networkmanager, *this));
         break;
 
-    case 5: // Debug
-        if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_DEFAULT)) break;
-        m_StateMachine.changeState(std::make_unique<Debug>(m_DefaultInitParams));
+    case 4: // Debug
+        if (!m_CrosshairStatus.flagSet(CROSSHAIR_FLAGS::STATE_DEBUG)) break;
+        m_StateMachine.changeState(std::make_unique<Debug>(m_PyroInitParams, m_networkmanager, *this));
         break;
 
     default:
@@ -100,6 +124,7 @@ void NRCCrosshair::execute_impl(packetptr_t packetptr)
     }
 }
 
+/*
 void NRCCrosshair::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr)
 {
     SimpleCommandPacket command_packet(*packetptr);
@@ -136,3 +161,4 @@ void NRCCrosshair::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID c
     }
     }
 }
+*/

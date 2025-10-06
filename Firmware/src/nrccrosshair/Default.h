@@ -28,7 +28,7 @@ class Default : public Types::Crosshairtypes::State_t
          * we want to control the available commands, we need to pass in the command handler from the riccoresystem.
          * 
          */
-        Default(Crosshair::DefaultStateInit& DefaultInitParams);
+        Default(Crosshair::DefaultStateInit& DefaultInitParams, NRCCrosshair& Crosshair);
 
         /**
          * @brief Perform any initialization required for the state

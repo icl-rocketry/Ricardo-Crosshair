@@ -39,9 +39,13 @@ class NRCCrosshair : public NRCRemoteActuatorBase<NRCCrosshair>
 
     void setup();
     void update();
-
+    
     bool isBaroApogeeReady() const { return m_baroCounter >= 1;}
-
+    void arm_base(int32_t arg);
+    void disarm_base()
+    void serviceSetup();
+    void unregisterServices();
+    uint8_t Pyroservice = (uint8_t) Services::ID::Pyro;
     protected:
     void execute_impl(packetptr_t packetptr) override;
     friend class NRCRemoteActuatorBase;
@@ -62,8 +66,8 @@ class NRCCrosshair : public NRCRemoteActuatorBase<NRCCrosshair>
     // FSM
     Types::CrosshairTypes::StateMachine_t m_StateMachine;
     Types::CrosshairTypes::SystemStatus_t m_CrosshairStatus;
-    Crosshair::DefaultStateInit m_DefaultInitParams;
-    Crosshair::PyroReadyInit m_PyroInitParams;
+    Crosshair::DefaultStateInit m_DefaultInitParams = m_CrosshairStatus;
+    Crosshair::PyroReadyInit m_PyroInitParams = (m_CrosshairStatus, m_pyroAdapter);
 
     // Initial constants
     int m_baroCounter = 0;

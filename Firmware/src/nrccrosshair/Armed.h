@@ -9,20 +9,21 @@
 #include "Config/systemflags_config.h"
 #include "Config/types.h"
 #include "Crosshairtypes.h"
-#include "Sensors/DPS368.h"
 #include "Sensors/sensorStructs.h"
 
-class Liftoff : public Types::CrosshairTypes::State_t
+class Armed : public Types::CrosshairTypes::State_t
 {
     public:
-        Liftoff(Crosshair::DefaultStateInit& DefaultInitParams, DPS368& barometer);
+        Armed(Crosshair::PyroReadyInit& PyroInitParams, RnpNetworkManager& networkmanager, NRCCrosshair& Crosshair);
 
         void initialize() override;
         Types::CrosshairTypes::State_ptr_t update() override;
         void exit() override;
 
     private:
+        RnpNetworkManager& m_networkmanager;
+        NRCCrosshair& m_Crosshair;
         Types::CrosshairTypes::SystemStatus_t& m_crosshairstatus;
-        DPS368& m_baro;
+        Types::LocalPyroAdapter_t& m_PyroAdapter;
 };
 

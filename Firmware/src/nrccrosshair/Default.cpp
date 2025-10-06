@@ -13,7 +13,7 @@
 
 #include "system.h"
 
-Default::Default(Crosshair::DefaultStateInit& DefaultInitParams)
+Default::Default(Crosshair::DefaultStateInit& DefaultInitParams, NRCCrosshair& Crosshair)
 : State(CROSSHAIR_FLAGS::STATE_DEFAULT, DefaultInitParams.crosshairstatus),
   m_DefaultInitParams(DefaultInitParams)
 {}
