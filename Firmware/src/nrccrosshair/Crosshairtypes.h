@@ -53,5 +53,7 @@ namespace Crosshair
     {
         Types::CrosshairTypes::SystemStatus_t &crosshairstatus;
         Types::LocalPyroAdapter_t &PyroAdapter;
+        int Barocount;
+        bool Below500;
     }
 }

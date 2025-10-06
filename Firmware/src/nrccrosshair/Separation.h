@@ -27,18 +27,19 @@ class Separation: public Types::CrosshairTypes ::State_t
 
     private:
 
-    Crosshair::PyroStateInit& m_PyroInitParams;
+    Crosshair::PyroReadyInit& m_PyroInitParams;
     RnpNetworkManager& m_networkmanager;
     NRCCrosshair& m_Crosshair;
     Types::LocalPyroAdapter_t& m_PyroAdapter;
-
+    
     
 
     uint8_t m_IgnitionCalls;
     uint64_t m_ignitionTime;
     uint64_t m_pyroTime = 500; 
    
-   
+    int m_BaroCounter;
+    bool m_below500;
   
    
 

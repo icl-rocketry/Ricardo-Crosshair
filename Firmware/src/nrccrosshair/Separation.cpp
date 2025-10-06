@@ -18,7 +18,9 @@ State(CROSSHAIR_FLAGS::STATE_SEPARATION,PyroInitParams.crosshairstatus),
 m_PyroInitParams(PyroInitParams),
 m_networkmanager(networkmanager),
 m_Crosshair(Crosshair),
-m_PyroAdapter(PyroInitParams.m_pyroAdapter)
+m_PyroAdapter(PyroInitParams.m_pyroAdapter),
+m_BaroCounter(PyroInitParams.m_baroCounter),
+m_below500(PyroInitParams.m_below500)
 
 {};
 
@@ -65,8 +67,10 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
     Separation state is only true when separation has occured,
     Pyro will only be armed
     need to think abt whether there is armed flag or smth from the m_Crosshair.m_pyroAdapter i can pass in
+
+    This should be sorted, using a baro counter of greater than or equal to 2 to trigger 
 */
-else if (m_IgnitionCalls == 0 && m_Crosshair.m_pyroAdapter.)
+else if (m_IgnitionCalls == 0 && m_BaroCounter>= 2 && m_below500)
 {
     
     m_Crosshair.m_pyroAdapter.execute(500);

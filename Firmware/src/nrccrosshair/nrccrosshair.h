@@ -22,10 +22,8 @@
 #include <Wire.h>
 
 #include "Default.h"
-#include "Liftoff.h"
-#include "Apogee.h"
 #include "Separation.h"
-#include "Pyroready.h"
+#include "Armed.h"
 #include "Debug.h"
 
 class NRCCrosshair : public NRCRemoteActuatorBase<NRCCrosshair>
@@ -63,13 +61,15 @@ class NRCCrosshair : public NRCRemoteActuatorBase<NRCCrosshair>
     DPS368& m_Baro;
     SensorStructs::BARO_t& m_BaroData;
 
+    // Initial constants
+    int m_baroCounter = 0;
+    bool m_below500 = true;
+
     // FSM
     Types::CrosshairTypes::StateMachine_t m_StateMachine;
     Types::CrosshairTypes::SystemStatus_t m_CrosshairStatus;
     Crosshair::DefaultStateInit m_DefaultInitParams = m_CrosshairStatus;
-    Crosshair::PyroReadyInit m_PyroInitParams = (m_CrosshairStatus, m_pyroAdapter);
+    Crosshair::PyroReadyInit m_PyroInitParams = (m_CrosshairStatus, m_pyroAdapter, m_baroCounter, m_below500);
 
-    // Initial constants
-    int m_baroCounter = 0;
-    bool m_below500 = true;
+    
 };
