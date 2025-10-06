@@ -51,7 +51,7 @@ void NRCCrosshair::DeployAltitude() //function to check barometer height for arm
     {
         m_below500 = true;
     }
-    else if (baroDara.alt > 450 && m_below500 && m_baroCounter = 0)
+    else if (baroDara.alt > 450 && m_below500 && m_baroCounter >= 1)
     {
         m_baroCounter++;
         m_below500 = false;
