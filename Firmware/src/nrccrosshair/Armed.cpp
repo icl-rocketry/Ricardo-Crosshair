@@ -24,13 +24,21 @@ void Armed::initialize()
 {
     Types::CrosshairTypes::State_t::initialize();
     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Entered Armed state.");
-
+    
+    NRCRemoteActuatorBase::arm_base(arg);
     m_Crosshair.serviceSetup()
 }
 
 Types::CrosshairTypes::State_ptr_t Armed::update()
 {
-    return nullptr; // waiting for apogee 
+    // Update internals
+    m_Crosshair.DeployAltitude();
+
+    if (m_Crosshair.isBaroApogeeReady() && baro.alt < 500 && qdrail.v < QD_RAIL_LIMIT) {
+        state.transition(separation);
+    }
+    
+    return nullptr;
 }
 
 void Armed::exit()

@@ -45,6 +45,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         VRailMonitor Logicrail;
         VRailMonitor QDrail;
         DPS368 Baro;
+        SensorStructs::BARO_t BaroData;
         SPIClass SPIBaro;
         SPIClass SPISD;
         //Buck BB;

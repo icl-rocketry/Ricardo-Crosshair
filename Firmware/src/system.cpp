@@ -39,8 +39,7 @@ SPIBaro(1),
 Baro(SPIBaro, Types::CoreTypes::SystemStatus_t, PinMap::BARO_CS)
 //BB(SPIBB,PinMap::BB_CS,SD_SCK_MHZ(20),false,&systemstatus),
 Logicrail(Logicrail, PinMap::BatteryV, GeneralConfig::LOGIC_r1, GeneralConfig::LOGIC_r2),
-Crosshair(networkmanager, Baro)
-
+Crosshair(networkmanager, Baro, BaroData)
 {};
 
 
