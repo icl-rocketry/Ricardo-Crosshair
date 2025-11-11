@@ -17,6 +17,3 @@
 	path = lib/SdFat
 	url = https://github.com/icl-rocketry/SdFat.git
 	branch = bug-fix
-[submodule "arduino-esp32"]
-	path = arduino-esp32
-	url = https://github.com/icl-rocketry/arduino-esp32.git

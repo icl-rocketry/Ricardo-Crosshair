@@ -1,4 +1,4 @@
-#include "dps368.h"
+#include "Sensors/DPS368.h"
 
 #include <libriccore/riccorelogging.h>
 
@@ -32,9 +32,9 @@ void DPS368::setup()
     _spi.endTransaction();
 
     begin(_spi, _cs);
-    // the dps library, while it pretends to check the product id and rev id, it actually only checks if it 
+    // the dps library, while it pretends to check the product id and rev id, it actually only checks if it
     //gets a response, so here we will proerply check if the prod id and rev id are as expected......
-   
+
     if (m_productID != 0 || m_revisionID != 1)
     {
         _systemstatus.newFlag(SYSTEM_FLAG::ERROR_BARO, "DPS368 failed to respond with expected prod and rev ID, Prod Id:" + std::to_string(m_productID) + ", Rev Id: " + std::to_string(m_revisionID));
@@ -61,11 +61,11 @@ void DPS368::setup()
     loadDPSCalibrationValues();
 
     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("DPS368 Initialized!");
-    
+
     _initialized = true;
 }
 
-void DPS368::update(SensorStructs::BARO_t &data)
+void DPS368::update(SensorStructs::BaroState_t& data)
 {
     if (!_initialized)
     {

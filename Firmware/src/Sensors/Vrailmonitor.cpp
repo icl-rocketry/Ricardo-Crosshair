@@ -1,4 +1,4 @@
-#include "vrailmonitor.h"
+#include "Vrailmonitor.h"
 
 #include <string>
 
@@ -9,10 +9,7 @@
 
 #include <libriccore/riccorelogging.h>
 
-
-
-
-VRailMonitor::VRailMonitor(std::string_view vrail_name,const uint8_t pin, const float r1,const float r2):
+VRailMonitor::VRailMonitor(std::string_view vrail_name, const uint8_t pin, const float r1, const float r2):
     _name(vrail_name),
     _pin(pin),
     _channel(ADC_CHANNEL_0),//default
@@ -37,7 +34,7 @@ void VRailMonitor::setup(int maxVoltage, int lowVoltage,int minVoltage){
     {
         _channel = static_cast<adc_channel_t>(channel-SOC_ADC_MAX_CHANNEL_NUM);
         _unit = ADC_UNIT_2;
-        
+
         error += adc2_config_channel_atten(static_cast<adc2_channel_t>(_channel),_atten);
     }
     else
@@ -58,18 +55,18 @@ void VRailMonitor::setup(int maxVoltage, int lowVoltage,int minVoltage){
     esp_adc_cal_characterize(_unit,_atten,_width,1100,&_adcCal);
 
     _adcInitialized = true;
-    
+
 }
 
-void VRailMonitor::update(float &data)    
+bool VRailMonitor::update(float &data)
 {
     if(!_adcInitialized)
     {
-        return;
+        return false;
     }
 
     if (millis() - prevSampleTime >= sampleDelta)
-    {   
+    {
         int raw_reading;
         if (_unit == ADC_UNIT_1)
         {
@@ -77,7 +74,7 @@ void VRailMonitor::update(float &data)
         }
         else
         {
-            
+
              adc2_get_raw(static_cast<adc2_channel_t>(_channel),_width,&raw_reading);
         }
 
@@ -94,7 +91,11 @@ void VRailMonitor::update(float &data)
         {
             _lowVoltageTriggered = false;
         }
+
+        return true;
     }
+
+    return false;
 }
 
 

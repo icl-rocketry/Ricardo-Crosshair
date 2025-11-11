@@ -13,16 +13,16 @@ class VRailMonitor
 public:
     /**
      * @brief Construct a new VRailMonitor object
-     * 
+     *
      * @param vrail_name name of voltage rail for logging purposes
      * @param pin pin to read voltage
-     * @param r1 value of r1 in potential divider (unitless)
+     * @param r1 value of r1 in potential divider (unitless) ohms?
      * @param r2 value of r2 in potential divider (unitless)
      */
     VRailMonitor(std::string_view vrail_name,const uint8_t pin, const float r1,const float r2);
     /**
      * @brief Set max, low and min voltage levels. Use max and min to accurately report battery percentage
-     * 
+     *
      * @param maxVoltage maximum voltage in mV
      * @param lowVoltage low voltage in mV
      * @param minVoltage minium voltage in mV
@@ -30,50 +30,52 @@ public:
     void setup(int maxVoltage, int lowVoltage,int minVoltage);
     /**
      * @brief Read data into sensor struct
-     * 
-     * @param data 
+     *
+     * @param data Voltage in mV
      */
-    void update(float &data);
+    bool update(float &data);
+
+    bool _lowVoltageTriggered;
 
 private:
     /**
      * @brief Alias for logging target
-     * 
+     *
      */
     static constexpr auto LOG_TARGET = RicCoreLoggingConfig::LOGGERS::SYS;
 
     /**
      * @brief Name of voltage rail for logging purposes
-     * 
+     *
      */
     const std::string _name;
     /**
      * @brief Pin to read voltage
-     * 
+     *
      */
     const uint8_t _pin;
 
     /**
      * @brief Corresponding adc channel
-     * 
+     *
      */
     adc_channel_t _channel;
 
     /**
      * @brief Corresonding adc unit
-     * 
+     *
      */
     adc_unit_t _unit;
 
     /**
      * @brief Calibration of adc struct
-     * 
+     *
      */
     esp_adc_cal_characteristics_t _adcCal;
 
     /**
      * @brief Flag for adc initialization
-     * 
+     *
      */
     bool _adcInitialized;
 
@@ -90,8 +92,6 @@ private:
     int _maxVoltage;
     int _lowVoltage;
     int _minVoltage;
-
-    bool _lowVoltageTriggered;
 
     uint16_t sampleDelta = 20; // sample the voltage rail at 5hz
     uint32_t prevSampleTime = 0;

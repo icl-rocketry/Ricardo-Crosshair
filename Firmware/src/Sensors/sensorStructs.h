@@ -7,37 +7,37 @@ Baro, INA current sense, and ADC sense to help with separation
 
 namespace SensorStructs
 {
-    struct BARO_t
+    struct BaroState_t
     {
-        float alt;   // altitude 
-        float temp;  // temperature 
-        float press; // pressure 
+        float alt;   // altitude
+        float temp;  // temperature
+        float press; // pressure
     };
 
-    struct ADC_V_RAIL_t
+    struct VRailState_t
     {
-        int volt;    // Voltage in mV
+        float volt;    // Voltage in mV
         int percent; // Percentage in reference to max voltage expeceted
     };
 
-    struct INA_V_RAIL_t
-    {
-        int volt;    // Voltage in mV
-        int current; // Current in mA
-        int power;   // Power in mW
-        int percent; // Percentage in reference to max voltage expeceted
-    };
+    // struct INA_V_RAIL_t
+    // {
+    //     int volt;    // Voltage in mV
+    //     int current; // Current in mA
+    //     int power;   // Power in mW
+    //     int percent; // Percentage in reference to max voltage expeceted
+    // };
 
-    struct STATE_t
+    struct SensorState_t
     {
         // ADC GPIO monitoring
-        ADC_V_RAIL_t BatteryV_LOG; // GPIO15
-        ADC_V_RAIL_t DeployV_LOG;  // GPIO10
+        VRailState_t batV; // GPIO15
+        VRailState_t deployV;  // GPIO10
 
         // Barometer sensor
-        BARO_t baro;
+        BaroState_t baro;
 
         // INA219 current sensor for pyro
-        INA_V_RAIL_t deprail;
+        // INA_V_RAIL_t deprail;
     };
 }
