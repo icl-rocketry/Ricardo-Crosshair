@@ -16,7 +16,7 @@ NRCCrosshair::NRCCrosshair(RnpNetworkManager& networkmanager, Types::CrosshairTy
         baro(spiBaro, systemstatus, PinMap::BARO_CS),
         baroData({ 0 }),
         smoothedBaroAlt(0),
-        // logicRail("Logic VRailMonitor", PinMap::BatteryV, GeneralConfig::LOGIC_r1, GeneralConfig::LOGIC_r2),
+        logicRail("Logic VRailMonitor", PinMap::BatteryV, GeneralConfig::LOGIC_r1, GeneralConfig::LOGIC_r2),
         qdRail("QD VRailMonitor", PinMap::QDV, GeneralConfig::DEPLOY_r1, GeneralConfig::DEPLOY_r2),
         lowVoltageTriggered(false),
         pyro(PinMap::PyroNuke, PinMap::PyroCont, networkmanager),
@@ -40,8 +40,8 @@ void NRCCrosshair::setup() {
     baro.setup();
     baro.calibrateBaro();
 
-    // logicRail.setup(GeneralConfig::LOGIC_MAX_V, GeneralConfig::LOGIC_LOW_V, GeneralConfig::LOGIC_MIN_V);
 
+    logicRail.setup(GeneralConfig::LOGIC_MAX_V, GeneralConfig::LOGIC_LOW_V, GeneralConfig::LOGIC_MIN_V);
     qdRail.setup(GeneralConfig::DEPLOY_MAX_V, GeneralConfig::DEPLOY_LOW_V, GeneralConfig::DEPLOY_MIN_V);
 
     // Initialise state machine
@@ -72,6 +72,11 @@ void NRCCrosshair::update() {
         lowVoltageTriggered = qdRail._lowVoltageTriggered;
     }
 
+    if (logicRail.update(voltage)) {
+        // RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(std::string("logic voltage : ") + std::to_string(voltage));
+        logicRailVoltage = voltage;
+    }
+
     // Read in barometer data
     float prevBaroAlt = baroData.alt;
     baro.update(baroData);
@@ -83,6 +88,7 @@ void NRCCrosshair::update() {
     if (logToFile && millis() - lastTimeLogged > GeneralConfig::SD_LOG_INTERVAL) {
         lastTimeLogged = millis();
         logFrame.qdVoltageMV = static_cast<uint32_t>(qdRailVoltage * 1000);
+        logFrame.logicVoltageMV = static_cast<uint32_t>(logicRailVoltage * 1000);
         logFrame.timestamp = millis();
         logFrame.deployed = deployed;
         logFrame.baroAlt = smoothedBaroAlt;

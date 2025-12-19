@@ -10,6 +10,7 @@ private:
         auto ret = RnpSerializer(
             &TelemetryLogframe::timestamp,
             &TelemetryLogframe::qdVoltageMV,
+            &TelemetryLogframe::logicVoltageMV,
             &TelemetryLogframe::baroAlt,
             &TelemetryLogframe::deployed
         );
@@ -19,6 +20,7 @@ private:
 public:
     uint64_t timestamp = 0;
     uint32_t qdVoltageMV = 0; // QDVoltage in mV
+    uint32_t logicVoltageMV = 0; // LOGICVoltage in mV
     bool deployed = false;
     float baroAlt = 0;
 

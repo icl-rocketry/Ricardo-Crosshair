@@ -27,7 +27,7 @@ namespace PinMap{
     static constexpr int PyroCont = 39;
 
     // ADC VRail monitor pins
-    // static constexpr int BatteryV = 15;
+    static constexpr int BatteryV = 15;
     static constexpr int QDV = 10;
 
     static constexpr int CELL_SWITCH = 42;

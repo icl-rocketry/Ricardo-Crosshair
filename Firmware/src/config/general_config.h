@@ -11,14 +11,14 @@ namespace GeneralConfig{
     static constexpr int I2C_FREQUENCY = 400000;
 
     // Vrail monitor voltage divider resistors
-    // static constexpr int LOGIC_r1 = 10;
-    // static constexpr int LOGIC_r2 = 1.8;
-    // static constexpr int LOGIC_MAX_V = 0;
-    // static constexpr int LOGIC_LOW_V = 0;
-    // static constexpr int LOGIC_MIN_V = 0;
+    static constexpr int LOGIC_r1 = 10;
+    static constexpr int LOGIC_r2 = 1.8;
+    static constexpr int LOGIC_MAX_V = 5;
+    static constexpr int LOGIC_LOW_V = 3;
+    static constexpr int LOGIC_MIN_V = 0;
 
-    static constexpr float DEPLOYMENT_ALTITUDE = 650;
-    static constexpr float DEPLOYMENT_DALT = 50;
+    static constexpr float DEPLOYMENT_ALTITUDE = 1;
+    static constexpr float DEPLOYMENT_DALT = 0.3;
 
     static constexpr int DEPLOY_r1 = 10;
     static constexpr int DEPLOY_r2 = 18;

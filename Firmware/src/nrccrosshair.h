@@ -67,10 +67,11 @@ public:
     float smoothedBaroAlt;
 
     // Voltage Rail Monitors
-    // VRailMonitor logicRail;
+    VRailMonitor logicRail;
     VRailMonitor qdRail;
     bool lowVoltageTriggered; // Triggered if the rail is low voltage.
     float qdRailVoltage; // Voltage of qd rail (V)
+    float logicRailVoltage; // Voltage of logic rail (V)
 
     // Deployment Pyro
     Types::LocalPyro_t pyro;

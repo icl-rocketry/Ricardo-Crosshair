@@ -14,6 +14,7 @@ class CrosshairTelemPacket : public RnpPacket{
         {
             auto ret = RnpSerializer(
                 &CrosshairTelemPacket::qdVoltageMV,
+                &CrosshairTelemPacket::logicVoltageMV,
                 &CrosshairTelemPacket::deployed,
                 &CrosshairTelemPacket::system_status,
                 &CrosshairTelemPacket::system_time,
@@ -42,6 +43,7 @@ class CrosshairTelemPacket : public RnpPacket{
         void serialize(std::vector<uint8_t>& buf) override;
 
         uint32_t qdVoltageMV;
+        uint32_t logicVoltageMV;
         bool deployed;
         uint32_t system_status;
         uint64_t system_time;
