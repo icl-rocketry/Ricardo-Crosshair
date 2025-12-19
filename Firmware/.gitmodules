@@ -13,7 +13,3 @@
 [submodule "components/ArduinoJson"]
 	path = components/ArduinoJson
 	url = https://github.com/bblanchon/ArduinoJson.git
-[submodule "lib/SdFat"]
-	path = lib/SdFat
-	url = https://github.com/icl-rocketry/SdFat.git
-	branch = bug-fix

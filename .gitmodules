@@ -13,3 +13,7 @@
 [submodule "Firmware/components/librrc"]
 	path = Firmware/components/librrc
 	url = https://github.com/icl-rocketry/librrc.git
+[submodule "Firmware/lib/SdFat"]
+	path = Firmware/lib/SdFat
+	url = https://github.com/icl-rocketry/SdFat.git
+	branch = bug-fix
