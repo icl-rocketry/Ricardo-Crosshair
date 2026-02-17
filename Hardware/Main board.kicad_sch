@@ -4514,16 +4514,6 @@
 		)
 		(uuid "0091278b-7d84-4525-9cc6-345b6e561110")
 	)
-	(label "Cont 1"
-		(at 64.77 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "04d53bf5-fb18-41bf-8b02-f43c5728ed31")
-	)
 	(label "SCL_I2C"
 		(at 226.06 135.89 0)
 		(effects
@@ -4726,6 +4716,16 @@
 		)
 		(uuid "53216145-332e-43aa-88f3-71ed45c0490d")
 	)
+	(label "Cont 1"
+		(at 139.7 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "599c9d8d-dcaa-4d8f-af27-fed02186f74b")
+	)
 	(label "Data-"
 		(at 99.06 162.56 0)
 		(fields_autoplaced yes)
@@ -4807,16 +4807,6 @@
 			(justify left bottom)
 		)
 		(uuid "6c1128bc-38d2-4f8f-92a4-d6ebf87a1eb9")
-	)
-	(label "Nuke 1"
-		(at 139.7 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6cc568d6-68ca-47d8-8e9c-f5e9e09bf1a2")
 	)
 	(label "GPIO10"
 		(at 62.23 92.71 180)
@@ -5089,6 +5079,16 @@
 			(justify left bottom)
 		)
 		(uuid "c18ba658-b588-4ea6-879b-e44186f3d45b")
+	)
+	(label "Nuke 1"
+		(at 64.77 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1923fc3-f698-413c-9d9b-d7381abc4465")
 	)
 	(label "GPIO8"
 		(at 190.5 146.05 180)
