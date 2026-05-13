@@ -2921,6 +2921,16 @@
 		)
 		(uuid "fcbbe7ca-4fd3-4aef-b666-e95e3bcc43f8")
 	)
+	(label "PYRO-ve"
+		(at 133.35 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82829a5a-3ddf-4d6c-b8d2-f8222bc3d5e0")
+	)
 	(hierarchical_label "Nuke 1"
 		(shape input)
 		(at 68.58 95.25 180)

@@ -1,4 +1,4 @@
-26407470071914161
+26412793493702838
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -105049,6 +105049,13 @@ iclr
 2
 2
 iclr
+ABM810000MHZ12D2W
+ABM8
+Crystal or Oscillator
+0
+4
+4
+iclr
 ADS131M06IRSNR
 
 
@@ -105209,6 +105216,13 @@ DIO_V3PAN50-M3_I
 0
 2
 2
+iclr
+DM3ATSFPEJM540
+DM3AT-SF-PEJM5(40)-3
+Connector
+0
+14
+14
 iclr
 DPAK228P990X239-4N
 
@@ -105611,6 +105625,13 @@ QFN300X300X100-16N
 iclr
 QFP50P900X900X120-48N
 PFB (S-PQFP-G48) PLASTIC QUAD FLATPACK
+Integrated Circuit
+0
+48
+48
+iclr
+QFP50P900X900X160-48N
+AK4493SEQ
 Integrated Circuit
 0
 48

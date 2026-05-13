@@ -3159,18 +3159,6 @@
 		)
 		(uuid "479a2809-abba-4e97-851f-dad2aadac511")
 	)
-	(text "FIX THE IDEAL DIODE WITH POTENTIAL DIVIDER FOR ENBB"
-		(exclude_from_sim no)
-		(at 54.61 85.852 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "cc0ff893-48ca-494e-b9c3-631178ff0ed2")
-	)
 	(text "Be extra careful in leaving this connected at a single point\n"
 		(exclude_from_sim no)
 		(at 180.34 96.52 0)
@@ -3345,12 +3333,6 @@
 		(uuid "9e9dab12-0d16-47c5-9925-9d9e8d96d07f")
 	)
 	(junction
-		(at 44.45 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a27f529c-37a4-454a-8fb3-fa18381fb7a7")
-	)
-	(junction
 		(at 137.16 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3429,6 +3411,12 @@
 		(uuid "e9c6b959-c405-4055-8a0c-b2df011e0a15")
 	)
 	(junction
+		(at 40.64 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed0e1d7e-8046-42ad-8f1a-4952c0444e54")
+	)
+	(junction
 		(at 53.34 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3498,7 +3486,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 107.95) (xy 44.45 105.41)
+			(xy 40.64 107.95) (xy 40.64 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3728,16 +3716,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 97.79) (xy 50.8 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3642bf17-6733-4bf6-8f3b-de547319ffd7")
-	)
-	(wire
-		(pts
 			(xy 208.28 62.23) (xy 217.17 62.23)
 		)
 		(stroke
@@ -3888,6 +3866,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 97.79) (xy 50.8 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e50d703-7246-4c08-a4b8-45d9feeb4e23")
+	)
+	(wire
+		(pts
 			(xy 114.3 102.87) (xy 114.3 107.95)
 		)
 		(stroke
@@ -3958,7 +3946,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 97.79) (xy 44.45 97.79)
+			(xy 27.94 97.79) (xy 40.64 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4068,7 +4056,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 100.33) (xy 44.45 97.79)
+			(xy 40.64 100.33) (xy 40.64 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5530,7 +5518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SSM3K15AMFVL3F"
+		(property "Footprint" "iclr:SSM3K15AMFVL3F"
 			(at 154.94 265.1 0)
 			(effects
 				(font
@@ -6440,7 +6428,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 44.45 102.87 0)
+		(at 40.64 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6448,7 +6436,7 @@
 		(dnp no)
 		(uuid "2774f9a0-75ef-41cf-85e9-67e820e7ff4c")
 		(property "Reference" "C39"
-			(at 38.608 101.6 0)
+			(at 34.798 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6457,7 +6445,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 38.608 104.14 0)
+			(at 34.798 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6466,7 +6454,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 44.45 102.87 0)
+			(at 40.64 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6475,7 +6463,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 102.87 0)
+			(at 40.64 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6484,7 +6472,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 102.87 0)
+			(at 40.64 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,23 +7468,21 @@
 		(dnp no)
 		(uuid "65e27c02-88bb-4cf0-a29b-21383b1a0cf5")
 		(property "Reference" "R22"
-			(at 46.2579 111.2889 90)
+			(at 52.832 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Value" "R"
-			(at 48.7979 111.2889 90)
+		(property "Value" "32k"
+			(at 53.086 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
@@ -8425,7 +8411,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 107.95 0)
+		(at 40.64 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8433,7 +8419,7 @@
 		(dnp no)
 		(uuid "81222ce0-f4a4-46cc-9653-fd64a670a399")
 		(property "Reference" "#PWR089"
-			(at 44.45 114.3 0)
+			(at 40.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8442,7 +8428,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 109.982 0)
+			(at 36.83 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8450,7 +8436,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 107.95 0)
+			(at 40.64 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8459,7 +8445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 107.95 0)
+			(at 40.64 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +8454,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 107.95 0)
+			(at 40.64 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8854,26 +8840,24 @@
 		(dnp no)
 		(uuid "9492302b-8b8c-4b01-8096-d31f29532a55")
 		(property "Reference" "R21"
-			(at 46.2579 103.6689 90)
+			(at 45.466 100.838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Value" "R"
-			(at 48.7979 103.6689 90)
+		(property "Value" "100k"
+			(at 44.45 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 50.8 101.6 0)
 			(effects
 				(font
