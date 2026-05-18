@@ -3159,6 +3159,16 @@
 		)
 		(uuid "479a2809-abba-4e97-851f-dad2aadac511")
 	)
+	(text "Potential divider setup for minimal 3.3V on the RBUS logic,\nincluding potential variances of resistor values\n"
+		(exclude_from_sim no)
+		(at 45.974 89.154 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8b70d142-3842-425d-8b29-89720da26a7f")
+	)
 	(text "Be extra careful in leaving this connected at a single point\n"
 		(exclude_from_sim no)
 		(at 180.34 96.52 0)
@@ -7923,7 +7933,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "120k"
 			(at 85.4964 152.146 0)
 			(effects
 				(font
@@ -8880,7 +8890,7 @@
 				)
 			)
 		)
-		(property "Value" "1.8k"
+		(property "Value" "18k"
 			(at 85.4964 159.766 0)
 			(effects
 				(font
