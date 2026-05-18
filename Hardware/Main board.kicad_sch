@@ -2985,6 +2985,10 @@
 		(uuid "86749bc6-b935-4c25-9994-054cf825bf11")
 	)
 	(no_connect
+		(at 250.19 102.87)
+		(uuid "89c74131-d306-4362-a5d6-919066c10558")
+	)
+	(no_connect
 		(at 69.85 62.23)
 		(uuid "b70556bd-0988-43e0-80b0-baa493a62600")
 	)
@@ -2999,6 +3003,10 @@
 	(no_connect
 		(at 135.89 123.19)
 		(uuid "d53bdb65-9586-496e-89ff-e2edf8bb8d22")
+	)
+	(no_connect
+		(at 250.19 100.33)
+		(uuid "e6ee0b2f-86b4-40c2-b4e7-ff355759db15")
 	)
 	(no_connect
 		(at 135.89 110.49)
@@ -4544,16 +4552,6 @@
 		)
 		(uuid "102e0bd6-1ae9-4198-b433-71f6ed307826")
 	)
-	(label "Current_sens"
-		(at 64.77 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16f4dcfe-a37f-4067-9462-eca21824658e")
-	)
 	(label "SD_CLK"
 		(at 250.19 95.25 180)
 		(effects
@@ -4563,16 +4561,6 @@
 			(justify right bottom)
 		)
 		(uuid "18b8296f-ad16-4e6e-9a8f-84764956d741")
-	)
-	(label "SD_DAT1"
-		(at 250.19 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1909071f-7c83-4116-b790-4e46e3a18b91")
 	)
 	(label "Cell-switch"
 		(at 67.31 125.73 180)
@@ -4643,16 +4631,6 @@
 			(justify right bottom)
 		)
 		(uuid "39fdceca-5301-4181-a144-d40a6f80b054")
-	)
-	(label "SD_DAT1"
-		(at 139.7 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3acb0a07-cba8-46b3-afe1-e9540933184f")
 	)
 	(label "Data+"
 		(at 99.06 160.02 0)
@@ -4798,6 +4776,16 @@
 		)
 		(uuid "6a1947fb-3906-417b-85c1-516f745f5f35")
 	)
+	(label "Current_sens"
+		(at 62.23 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a8beac1-3d45-4106-8707-7299d987f3ff")
+	)
 	(label "CAN_RX"
 		(at 13.97 40.64 0)
 		(effects
@@ -4887,16 +4875,6 @@
 			(justify left bottom)
 		)
 		(uuid "934501a9-6c72-4292-a8f3-50b92e9ae216")
-	)
-	(label "SD_DAT2"
-		(at 250.19 102.87 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "98ebead0-cf4f-46e6-b06b-99edb2b29e1e")
 	)
 	(label "SD_CLK"
 		(at 135.89 115.57 0)
@@ -5139,16 +5117,6 @@
 			(justify right bottom)
 		)
 		(uuid "ca65aa8f-1b33-4279-af1e-2dc433db5168")
-	)
-	(label "SD_DAT2"
-		(at 62.23 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cc31bf35-94ad-4981-888d-c744d391365e")
 	)
 	(label "SDA_I2C"
 		(at 226.06 140.97 0)
