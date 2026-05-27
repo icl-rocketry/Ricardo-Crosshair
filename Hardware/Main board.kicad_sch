@@ -2973,6 +2973,10 @@
 		(uuid "61294c5c-57ae-41ca-b4d3-2116de5756c4")
 	)
 	(no_connect
+		(at 135.89 105.41)
+		(uuid "630f18fb-a29e-4b3a-b937-ed11775dd2fc")
+	)
+	(no_connect
 		(at 135.89 130.81)
 		(uuid "63ee44e2-0820-44c5-a4bd-36d4845bb313")
 	)
@@ -2987,6 +2991,14 @@
 	(no_connect
 		(at 250.19 102.87)
 		(uuid "89c74131-d306-4362-a5d6-919066c10558")
+	)
+	(no_connect
+		(at 139.7 97.79)
+		(uuid "98b94766-c48b-4d0e-aa71-1740d06c2400")
+	)
+	(no_connect
+		(at 64.77 120.65)
+		(uuid "9e5e0c9f-e70d-4992-8813-b88f2d5d9795")
 	)
 	(no_connect
 		(at 69.85 62.23)
@@ -5415,7 +5427,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10kΩ"
 			(at 31.9786 189.103 0)
 			(effects
 				(font
@@ -5681,7 +5693,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10kΩ"
 			(at 47.2186 189.103 0)
 			(effects
 				(font
@@ -6080,7 +6092,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 33.02 18.923 90)
 			(effects
 				(font
@@ -6344,7 +6356,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 46.99 18.923 90)
 			(effects
 				(font
@@ -6823,7 +6835,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 228.6 124.4599 0)
 			(effects
 				(font
@@ -7093,7 +7105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 215.138 124.46 0)
 			(effects
 				(font
@@ -7361,7 +7373,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 33.02 37.973 90)
 			(effects
 				(font
@@ -8033,7 +8045,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 33.02 27.813 90)
 			(effects
 				(font
@@ -10042,16 +10054,6 @@
 				(justify left top)
 			)
 		)
-		(pin "CDC" output
-			(at 236.22 59.69 0)
-			(uuid "3ad73130-d46d-4a66-9549-6398069cb185")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "INT_Fault" output
 			(at 203.2 63.5 180)
 			(uuid "179367e6-67b6-411f-a0e1-85fca4a579c5")
@@ -10100,6 +10102,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "Current_sense" input
+			(at 236.22 59.69 0)
+			(uuid "b5e04b34-963e-4383-b7dc-8ba4d2695533")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
