@@ -53002,7 +53002,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Designed by\n\nWilliam Richards\n\nElectronics 2025"
+	(gr_text "Designed by\n\nWilliam Richards\n\nElectronics 2026\n"
 		(at 101.265 93.73 90)
 		(layer "B.SilkS")
 		(uuid "a45b0c7f-4fe9-4dc0-a4fe-2d1b923ea57c")
