@@ -505,7 +505,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Main board.kicad_pro",
+    "filename": "Crosshair.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -557,7 +557,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Main board.step",
+      "step": "Crosshair.step",
       "svg": "",
       "vrml": ""
     },
@@ -565,7 +565,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "../../Inventory/BOMs/Crosshair.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -807,6 +807,24 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Inductance",
+          "name": "Inductance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field5",
+          "name": "Field5",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field15",
+          "name": "Field15",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -872,40 +890,40 @@
       "Root"
     ],
     [
-      "00000000-0000-0000-0000-000061942b9a",
-      "CAN-BUS"
-    ],
-    [
-      "00000000-0000-0000-0000-000061925999",
-      "USB"
-    ],
-    [
       "48a413b4-b7c2-44ac-971c-583c31b73475",
       "Power"
-    ],
-    [
-      "2f4d1188-68cf-4851-a56c-97d43238a03a",
-      "Pyro"
-    ],
-    [
-      "d9e876a4-516f-4c0a-b39c-c20b5b59833a",
-      "Sensors"
     ],
     [
       "ab7b921d-66d3-49d7-abff-63184671bf46",
       "Voltage Regulation"
     ],
     [
+      "4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061",
+      "GPIO"
+    ],
+    [
+      "00000000-0000-0000-0000-000061925999",
+      "USB"
+    ],
+    [
       "3151accb-1938-449b-8397-baa4e59e1635",
       "USB-RBUS"
     ],
     [
-      "9b3767b0-c58a-45b6-92e7-d7216660795a",
-      "SD-card"
+      "00000000-0000-0000-0000-000061942b9a",
+      "CAN-BUS"
     ],
     [
-      "4d7a61a6-e9d3-4ff3-bb3d-b277b97d3061",
-      "GPIO"
+      "d9e876a4-516f-4c0a-b39c-c20b5b59833a",
+      "Sensors"
+    ],
+    [
+      "2f4d1188-68cf-4851-a56c-97d43238a03a",
+      "Pyro"
+    ],
+    [
+      "9b3767b0-c58a-45b6-92e7-d7216660795a",
+      "SD-card"
     ]
   ],
   "text_variables": {}

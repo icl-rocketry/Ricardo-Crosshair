@@ -3824,7 +3824,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b674e8")
-		(property "Reference" "LED5"
+		(property "Reference" "LED301"
 			(at 52.07 58.293 0)
 			(effects
 				(font
@@ -3832,7 +3832,7 @@
 				)
 			)
 		)
-		(property "Value" "RED_LED"
+		(property "Value" "LED_RED"
 			(at 52.07 60.6044 0)
 			(effects
 				(font
@@ -3867,6 +3867,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 52.07 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c3ea2a06-1773-4450-9273-f6d2533c8ea8")
 		)
@@ -3874,9 +3964,9 @@
 			(uuid "27a26f87-3ba7-47e5-ad37-d7a8feb63205")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "LED5")
+					(reference "LED301")
 					(unit 1)
 				)
 			)
@@ -3891,7 +3981,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b6bc0b")
-		(property "Reference" "R7"
+		(property "Reference" "R305"
 			(at 57.15 50.9016 90)
 			(effects
 				(font
@@ -3934,6 +4024,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 57.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dbb7f326-03f2-43bc-bd9f-363e77d4bb84")
 		)
@@ -3941,9 +4121,9 @@
 			(uuid "b7b912dc-1955-41be-ac01-54cde64e6251")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R7")
+					(reference "R305")
 					(unit 1)
 				)
 			)
@@ -3959,7 +4139,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06aaf826-7edd-48bf-b4ad-5dd52896286a")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR0302"
 			(at 35.56 168.91 0)
 			(effects
 				(font
@@ -4007,9 +4187,9 @@
 			(uuid "d831bc87-29c8-42bd-8485-72c4be3094eb")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR078")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -4025,7 +4205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ba3aadd-011f-440a-8936-85d7dc4233d3")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR0301"
 			(at 29.21 196.85 0)
 			(effects
 				(font
@@ -4073,9 +4253,9 @@
 			(uuid "388c9911-8a92-4de6-ac83-b22b243849f5")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR0100")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -4090,7 +4270,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e6482f2-37a1-4417-ab45-c3d48f0a88c5")
-		(property "Reference" "C45"
+		(property "Reference" "C304"
 			(at 48.514 167.894 90)
 			(effects
 				(font
@@ -4135,6 +4315,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 53.34 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dcbfe5a5-321e-47b9-bc25-f502c642b483")
 		)
@@ -4142,9 +4412,9 @@
 			(uuid "3daa107f-0af6-4ed2-8863-4af293fae3db")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C45")
+					(reference "C304")
 					(unit 1)
 				)
 			)
@@ -4159,7 +4429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ecedec9-9e2a-495e-ba4b-fb9e91df97cd")
-		(property "Reference" "C51"
+		(property "Reference" "C307"
 			(at 126.746 169.164 90)
 			(effects
 				(font
@@ -4168,7 +4438,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 119.38 169.164 90)
 			(effects
 				(font
@@ -4204,6 +4474,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 125.73 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba3e8ea6-c7c7-467b-8d51-248b8bef4a47")
 		)
@@ -4211,9 +4571,9 @@
 			(uuid "2a40de32-473f-40c2-b562-169ad0a70d7e")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C51")
+					(reference "C307")
 					(unit 1)
 				)
 			)
@@ -4228,7 +4588,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14aad060-75f5-4d49-a656-f72cd661525e")
-		(property "Reference" "R46"
+		(property "Reference" "R308"
 			(at 67.818 147.066 0)
 			(effects
 				(font
@@ -4273,6 +4633,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 72.39 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dca059ce-2a9b-4eac-86fe-3f3da9552ac3")
 		)
@@ -4280,9 +4730,9 @@
 			(uuid "af1b1e2a-274c-480d-b14f-575828c69980")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R46")
+					(reference "R308")
 					(unit 1)
 				)
 			)
@@ -4297,7 +4747,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "250687a1-27a3-4da3-ba6e-9976764bbf2d")
-		(property "Reference" "C54"
+		(property "Reference" "C302"
 			(at 38.608 152.4 0)
 			(effects
 				(font
@@ -4342,6 +4792,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 39.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a9309e6d-1628-4174-bf84-47db2f7767ce")
 		)
@@ -4349,9 +4889,9 @@
 			(uuid "e8144cf3-4682-467d-b0a7-1c3cd066fb0a")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C54")
+					(reference "C302")
 					(unit 1)
 				)
 			)
@@ -4367,7 +4907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ee52d4d-8f57-4d17-9046-f7fa477aff1c")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR0305"
 			(at 80.01 154.94 0)
 			(effects
 				(font
@@ -4415,9 +4955,9 @@
 			(uuid "2e958d35-a0ae-4de6-93fb-07bad82bc605")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR092")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -4432,7 +4972,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2fa03d13-238a-463a-b442-babd44cefb04")
-		(property "Reference" "R45"
+		(property "Reference" "R307"
 			(at 58.928 150.876 0)
 			(effects
 				(font
@@ -4477,6 +5017,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0327ba71-e132-4699-8d14-87d6702c2550")
 		)
@@ -4484,9 +5114,9 @@
 			(uuid "e4e7896b-c347-460a-bcf1-d785d4129ec4")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R45")
+					(reference "R307")
 					(unit 1)
 				)
 			)
@@ -4502,7 +5132,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41bd2045-f381-4a97-b337-7de2f1f0b693")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR0304"
 			(at 46.99 180.34 0)
 			(effects
 				(font
@@ -4550,9 +5180,9 @@
 			(uuid "05a3bdc0-30f2-496f-946b-f210e71a4a34")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR094")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -4567,7 +5197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4632d067-db55-4849-be64-a60ffde2b218")
-		(property "Reference" "C48"
+		(property "Reference" "C310"
 			(at 157.48 153.67 90)
 			(effects
 				(font
@@ -4612,6 +5242,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 156.21 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1e4c598f-64b4-44c1-954b-e2d3cf9a028f")
 		)
@@ -4619,9 +5339,9 @@
 			(uuid "3f464693-651e-49e0-b089-a0484b4a64f4")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C48")
+					(reference "C310")
 					(unit 1)
 				)
 			)
@@ -4637,7 +5357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "625989aa-169c-4399-b0b3-a262ccb75928")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR0306"
 			(at 191.77 85.09 0)
 			(effects
 				(font
@@ -4685,9 +5405,9 @@
 			(uuid "b0c97320-0cd8-4476-a4b5-281029175986")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR056")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -4702,7 +5422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "68437ba2-0e2a-452c-8068-91ccb27f2b33")
-		(property "Reference" "C46"
+		(property "Reference" "C305"
 			(at 56.388 180.34 0)
 			(effects
 				(font
@@ -4747,6 +5467,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fdb4c640-38e3-44be-94c2-3f2bfa9cf6f7")
 		)
@@ -4754,9 +5564,9 @@
 			(uuid "382a59d5-d025-42c9-91f4-bf2f84f70dd0")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C46")
+					(reference "C305")
 					(unit 1)
 				)
 			)
@@ -4771,7 +5581,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70bf2b93-0bb1-4d3c-b6e0-389f8d85e491")
-		(property "Reference" "R53"
+		(property "Reference" "R309"
 			(at 123.444 155.702 90)
 			(effects
 				(font
@@ -4816,6 +5626,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 127 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e815803a-7de9-4e43-8d2f-f6b83c6f7fee")
 		)
@@ -4823,9 +5723,9 @@
 			(uuid "7f875cd8-bc16-4275-9179-b7355d8d5d1b")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R53")
+					(reference "R309")
 					(unit 1)
 				)
 			)
@@ -4841,7 +5741,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70ff0838-89d7-4d9b-b18f-41ceac3ecb27")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR0303"
 			(at 45.72 62.23 0)
 			(effects
 				(font
@@ -4889,9 +5789,9 @@
 			(uuid "6a035a2e-0fa0-4597-b016-2342972d1ed2")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "#PWR090")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -4906,7 +5806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e848276-3ce4-4a06-81b5-c2cc23c330a2")
-		(property "Reference" "R52"
+		(property "Reference" "R310"
 			(at 162.052 161.29 90)
 			(effects
 				(font
@@ -4951,6 +5851,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 163.83 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "567d63af-abb4-4321-a125-975827e60292")
 		)
@@ -4958,9 +5948,9 @@
 			(uuid "d3dfb067-ff61-4aea-99cb-b71328504bf8")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R52")
+					(reference "R310")
 					(unit 1)
 				)
 			)
@@ -4975,7 +5965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7f05f751-e639-4ff0-ace8-b84915dcbb4a")
-		(property "Reference" "C53"
+		(property "Reference" "C301"
 			(at 27.686 152.4 0)
 			(effects
 				(font
@@ -5020,6 +6010,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 31.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "163f65ed-1939-481c-b579-f53b2420015f")
 		)
@@ -5027,9 +6107,9 @@
 			(uuid "b9f1d659-3084-4a69-a1c7-4d83f65d155e")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C53")
+					(reference "C301")
 					(unit 1)
 				)
 			)
@@ -5044,7 +6124,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89ed8d1f-ef75-4adf-a0cd-ab04e6c5c8a8")
-		(property "Reference" "C49"
+		(property "Reference" "C309"
 			(at 150.114 157.734 90)
 			(effects
 				(font
@@ -5053,7 +6133,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.2nf"
+		(property "Value" "1.2nF"
 			(at 142.24 157.48 90)
 			(effects
 				(font
@@ -5089,6 +6169,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 148.59 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "541acd2b-5bf5-4b1d-9283-33329e27a774")
 		)
@@ -5096,9 +6266,9 @@
 			(uuid "f64cbd2f-26c0-4b36-80bd-8c16c36f0628")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C49")
+					(reference "C309")
 					(unit 1)
 				)
 			)
@@ -5114,7 +6284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9379b832-7652-4ba1-b56e-ca7a4f718055")
-		(property "Reference" "C52"
+		(property "Reference" "C306"
 			(at 124.714 164.084 90)
 			(effects
 				(font
@@ -5123,7 +6293,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 132.08 164.084 90)
 			(effects
 				(font
@@ -5159,6 +6329,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 125.73 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a93da79-abf2-467d-b76b-67a278818ec6")
 		)
@@ -5166,9 +6426,9 @@
 			(uuid "79f70cd0-0236-4a85-b242-ac34d796002b")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C52")
+					(reference "C306")
 					(unit 1)
 				)
 			)
@@ -5183,16 +6443,16 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "996d4191-8c0b-4d79-9edf-3c3f60e34f63")
-		(property "Reference" "L5"
-			(at 133.604 170.18 0)
+		(property "Reference" "L301"
+			(at 140.208 167.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "PA5432472NLT"
-			(at 144.78 170.18 0)
+		(property "Value" "4.7uH"
+			(at 140.208 169.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5235,6 +6495,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PA5432472NLT"
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 137.16 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ddb7ac2d-de5e-4cb6-a505-cafae91cc6de")
 		)
@@ -5242,9 +6592,9 @@
 			(uuid "718f77ce-e6bb-4a4d-a4e7-342dcfbccbf7")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "L5")
+					(reference "L301")
 					(unit 1)
 				)
 			)
@@ -5259,7 +6609,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9bd76b65-b08b-4e39-baed-cf47164ea19d")
-		(property "Reference" "R44"
+		(property "Reference" "R302"
 			(at 49.657 143.383 0)
 			(effects
 				(font
@@ -5304,6 +6654,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 48.26 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bbb6a86f-8013-4c94-aa76-f4f7b634aa56")
 		)
@@ -5311,9 +6751,9 @@
 			(uuid "33ff4563-207e-402a-a335-18fed38defdd")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R44")
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -5328,7 +6768,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "adb7ba40-eb8a-4033-b38b-f8d074258ff9")
-		(property "Reference" "R48"
+		(property "Reference" "R306"
 			(at 64.262 171.704 90)
 			(effects
 				(font
@@ -5373,6 +6813,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 62.23 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "600600d6-1719-4528-9407-c572b7af4942")
 		)
@@ -5380,9 +6910,9 @@
 			(uuid "72a33dd4-fbe6-47e5-819b-0773c7464f0d")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R48")
+					(reference "R306")
 					(unit 1)
 				)
 			)
@@ -5397,7 +6927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1c3847f-d22b-458d-b576-3aa3f5ab28d8")
-		(property "Reference" "R50"
+		(property "Reference" "R304"
 			(at 53.594 188.722 90)
 			(effects
 				(font
@@ -5442,6 +6972,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 55.88 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12414c94-572c-413d-a73d-99d8ad2c3ae3")
 		)
@@ -5449,9 +7069,9 @@
 			(uuid "185e5884-b289-4916-9fa5-20c994fb33c4")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R50")
+					(reference "R304")
 					(unit 1)
 				)
 			)
@@ -5462,12 +7082,12 @@
 		(at 182.88 69.85 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4c7b9a0-ea23-486e-8ac0-bc2b9708c66c")
-		(property "Reference" "JP2"
+		(property "Reference" "JP301"
 			(at 182.88 63.5 0)
 			(effects
 				(font
@@ -5510,6 +7130,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c2e9124c-7a45-43c4-9584-ddfc8b5cbd78")
 		)
@@ -5517,9 +7227,9 @@
 			(uuid "9b3cca16-33df-411b-95d3-a580c4c17317")
 		)
 		(instances
-			(project ""
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "JP2")
+					(reference "JP301")
 					(unit 1)
 				)
 			)
@@ -5534,7 +7244,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0c11d5c-ea2e-42f3-acee-3e4f41d8d210")
-		(property "Reference" "C47"
+		(property "Reference" "C303"
 			(at 48.006 180.34 0)
 			(effects
 				(font
@@ -5579,6 +7289,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 52.07 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f96481f7-1037-449f-bedd-1717d4039b3c")
 		)
@@ -5586,9 +7386,9 @@
 			(uuid "038f2bca-b30b-4438-9989-0623e59f1a8e")
 		)
 		(instances
-			(project ""
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C47")
+					(reference "C303")
 					(unit 1)
 				)
 			)
@@ -5603,7 +7403,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c66aa930-a0ee-4cc4-bee3-a5c2b609cdef")
-		(property "Reference" "R47"
+		(property "Reference" "R303"
 			(at 49.657 157.353 0)
 			(effects
 				(font
@@ -5648,6 +7448,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "65f045a8-4037-4994-bd21-baf43571273c")
 		)
@@ -5655,9 +7545,9 @@
 			(uuid "9bd54750-eba7-4c5e-91a0-e072486dcac8")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R47")
+					(reference "R303")
 					(unit 1)
 				)
 			)
@@ -5672,7 +7562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5f86f22-3d05-4c26-aab3-3938d778509a")
-		(property "Reference" "C50"
+		(property "Reference" "C308"
 			(at 141.986 161.544 90)
 			(effects
 				(font
@@ -5717,6 +7607,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 140.97 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa9f0e9d-1d3b-4dfb-990a-d8cfd4442e47")
 		)
@@ -5724,9 +7704,9 @@
 			(uuid "cba8b29b-987f-4a86-89d1-85a3c89cea33")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C50")
+					(reference "C308")
 					(unit 1)
 				)
 			)
@@ -5741,7 +7721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e68cded0-6bd3-4acc-8a01-8b1ff8c4fdf5")
-		(property "Reference" "C28"
+		(property "Reference" "C311"
 			(at 194.818 76.708 90)
 			(effects
 				(font
@@ -5750,7 +7730,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 196.596 75.438 90)
 			(effects
 				(font
@@ -5786,6 +7766,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 191.77 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12e92317-2f94-495a-b6de-bb8fa86a478a")
 		)
@@ -5793,9 +7863,9 @@
 			(uuid "cacfce52-4d1f-4f70-9022-f5af7c02e8e8")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "C28")
+					(reference "C311")
 					(unit 1)
 				)
 			)
@@ -5811,7 +7881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9b3f868-2cd4-4c24-9893-ac675b972cc7")
-		(property "Reference" "Q2"
+		(property "Reference" "Q302"
 			(at 83.82 140.9699 0)
 			(effects
 				(font
@@ -5928,6 +7998,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 78.74 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "1683e012-4c7b-434c-9a82-8062505c9444")
 		)
@@ -5959,9 +8119,9 @@
 			(uuid "d8ea52cb-5d44-4b00-b537-0000394e0984")
 		)
 		(instances
-			(project ""
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "Q2")
+					(reference "Q302")
 					(unit 1)
 				)
 			)
@@ -5976,7 +8136,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eba61959-0db6-4abd-b565-69cd70789e94")
-		(property "Reference" "R49"
+		(property "Reference" "R301"
 			(at 40.894 179.832 90)
 			(effects
 				(font
@@ -6021,6 +8181,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 43.18 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "20c70979-151e-47b4-b494-6df6f0db2eec")
 		)
@@ -6028,9 +8278,9 @@
 			(uuid "37bacfef-7771-4d5d-804a-0e2039b70cd0")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "R49")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -6046,7 +8296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb529ab7-ab35-4740-929b-78caba509760")
-		(property "Reference" "Q3"
+		(property "Reference" "Q301"
 			(at 63.5 130.81 90)
 			(effects
 				(font
@@ -6161,6 +8411,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 63.5 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "93383c86-d969-4c4b-867a-21d26d15e9ec")
 		)
@@ -6192,9 +8532,9 @@
 			(uuid "92739720-297d-4caa-a419-2a640d6574b1")
 		)
 		(instances
-			(project "Main board"
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "Q3")
+					(reference "Q301")
 					(unit 1)
 				)
 			)
@@ -6210,7 +8550,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe54b921-7f0f-452d-bc0f-d8ba18a87e2d")
-		(property "Reference" "U10"
+		(property "Reference" "U301"
 			(at 95.25 147.32 0)
 			(effects
 				(font
@@ -6305,6 +8645,96 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating DC" ""
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "15"
 			(uuid "47a5a8f5-81af-429d-b279-62dde378b9e8")
 		)
@@ -6396,9 +8826,9 @@
 			(uuid "bf78d814-7c56-4b78-a8e6-b6da4061aa27")
 		)
 		(instances
-			(project ""
+			(project "Crosshair"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/ab7b921d-66d3-49d7-abff-63184671bf46"
-					(reference "U10")
+					(reference "U301")
 					(unit 1)
 				)
 			)
