@@ -3152,7 +3152,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
+		(property "Footprint" "iclr:SODFL3516X70N"
 			(at 161.29 95.25 0)
 			(effects
 				(font

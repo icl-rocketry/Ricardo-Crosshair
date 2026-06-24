@@ -5828,7 +5828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "iclr:SSM3K15AMFVL3F"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-723"
 			(at 154.94 265.1 0)
 			(effects
 				(font
