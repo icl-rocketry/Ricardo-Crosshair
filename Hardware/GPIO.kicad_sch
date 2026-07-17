@@ -856,7 +856,7 @@
 		)
 		(uuid "a21cd426-dec7-4a01-9a7b-16bfe579d847")
 	)
-	(hierarchical_label "GPIO10"
+	(hierarchical_label "GPIO9"
 		(shape bidirectional)
 		(at 106.68 85.09 180)
 		(effects
@@ -867,7 +867,7 @@
 		)
 		(uuid "1a5cbbc0-e16a-49f7-a65a-24383550eb13")
 	)
-	(hierarchical_label "GPIO9"
+	(hierarchical_label "GPIO8"
 		(shape bidirectional)
 		(at 137.16 82.55 0)
 		(effects
@@ -878,7 +878,7 @@
 		)
 		(uuid "423b9340-535b-44a3-9a8b-00ff2318e11b")
 	)
-	(hierarchical_label "GPIO7"
+	(hierarchical_label "GPIO6"
 		(shape bidirectional)
 		(at 157.48 125.73 270)
 		(effects
@@ -889,7 +889,7 @@
 		)
 		(uuid "426e97a5-648e-4f92-ab43-c29d937565e0")
 	)
-	(hierarchical_label "GPIO9"
+	(hierarchical_label "GPIO8"
 		(shape bidirectional)
 		(at 143.51 125.73 270)
 		(effects
@@ -900,7 +900,7 @@
 		)
 		(uuid "647a276a-f675-4405-a54b-8d82a8a31890")
 	)
-	(hierarchical_label "GPIO9"
+	(hierarchical_label "GPIO8"
 		(shape bidirectional)
 		(at 201.93 72.39 180)
 		(effects
@@ -911,7 +911,7 @@
 		)
 		(uuid "98350ae5-5d04-4a8f-8229-1a1bd87b7bcd")
 	)
-	(hierarchical_label "GPIO8"
+	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 149.86 125.73 270)
 		(effects
@@ -922,7 +922,7 @@
 		)
 		(uuid "a3401c77-a6cd-445d-8084-8b01c9d5288f")
 	)
-	(hierarchical_label "GPIO7"
+	(hierarchical_label "GPIO6"
 		(shape bidirectional)
 		(at 106.68 80.01 180)
 		(effects
@@ -933,7 +933,7 @@
 		)
 		(uuid "af0ad836-9ff1-4e81-bc59-08dabfc5ccbf")
 	)
-	(hierarchical_label "GPIO8"
+	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 179.07 73.66 180)
 		(effects
@@ -944,7 +944,7 @@
 		)
 		(uuid "b2f4c32d-156d-45b0-ba7a-530f70ef8441")
 	)
-	(hierarchical_label "GPIO10"
+	(hierarchical_label "GPIO9"
 		(shape bidirectional)
 		(at 201.93 74.93 180)
 		(effects
@@ -955,7 +955,7 @@
 		)
 		(uuid "bd00c60d-d453-4b89-b39e-0a9d78df713f")
 	)
-	(hierarchical_label "GPIO7"
+	(hierarchical_label "GPIO6"
 		(shape bidirectional)
 		(at 179.07 71.12 180)
 		(effects
@@ -966,7 +966,7 @@
 		)
 		(uuid "c08b32b1-d628-4a78-9afb-f11ebeefad79")
 	)
-	(hierarchical_label "GPIO8"
+	(hierarchical_label "GPIO7"
 		(shape bidirectional)
 		(at 137.16 80.01 0)
 		(effects
@@ -977,7 +977,7 @@
 		)
 		(uuid "c25d2c04-c2fc-4b23-8ccf-d9ebef9716c7")
 	)
-	(hierarchical_label "GPIO10"
+	(hierarchical_label "GPIO9"
 		(shape bidirectional)
 		(at 165.1 125.73 270)
 		(effects
