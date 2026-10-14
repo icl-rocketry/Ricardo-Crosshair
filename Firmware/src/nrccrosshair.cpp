@@ -62,6 +62,7 @@ void NRCCrosshair::setup() {
     }
 
     pyro.setup();
+    networkmanager.registerService(static_cast<uint8_t>(Services::ID::Pyro), pyro.getThisNetworkCallback());
 }
 
 void NRCCrosshair::update() {
@@ -218,7 +219,6 @@ void NRCCrosshair::arm_base(int32_t arg) {
         return;
     }
 
-    networkmanager.registerService(static_cast<uint8_t>(Services::ID::Pyro), pyro.getThisNetworkCallback());
     stateMachine.changeState(std::make_unique<Armed>(systemstatus, commandHandler, *this));
 
     // Call parent arm
@@ -258,10 +258,10 @@ void NRCCrosshair::execute_base(int32_t arg) {
         case 3: // Deploy
             if (systemstatus.flagSet(SYSTEM_FLAG::STATE_DEPLOY) || systemstatus.flagSet(SYSTEM_FLAG::STATE_IDLE)) {
                 if (systemstatus.flagSet(SYSTEM_FLAG::STATE_DEPLOY)) {
-                    // RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("DEPLOYED ALREADY");
+                    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("DEPLOYED ALREADY");
                 }
                 if (systemstatus.flagSet(SYSTEM_FLAG::STATE_IDLE)) {
-                    // RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("IDLE ALREADY");
+                    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("IDLE ALREADY");
                 }
                 break;
             }

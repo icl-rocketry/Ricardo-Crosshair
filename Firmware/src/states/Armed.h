@@ -10,6 +10,8 @@
  */
 #pragma once
 
+#include "ApogeeDetect/apogeedetect.h"
+
 #include <memory>
 
 #include "Config/forward_decl.h"
@@ -60,13 +62,17 @@ private:
     uint32_t prevLogMessageTime;
 
     unsigned long armStartTime;
-    unsigned long armIdleTime;
+
+    ApogeeDetect apogeeDetector;
 
 public:
     NRCCrosshair& crosshair;
-
 private:
-    bool hasGoneOverDeploymentAlt = false;
-    const float deploymentAlt = GeneralConfig::DEPLOYMENT_ALTITUDE; // Altitude to trigger pyro channel at.
-    const float dAlt = GeneralConfig::DEPLOYMENT_DALT; // Altitude debounce delta. Positive will only trigger at deployment alt + dAlt, and lower will only trigger at -dAtl.
+
+    bool m_inDangerZone = false;
+    bool m_stageDeployed = false;
+    bool m_apogeeReached = false;
+
+    float m_prevAltitude = 0.0f;
+    uint64_t m_prevTime = 0;
 };

@@ -17,8 +17,8 @@ namespace GeneralConfig{
     static constexpr int LOGIC_LOW_V = 3;
     static constexpr int LOGIC_MIN_V = 0;
 
-    static constexpr float DEPLOYMENT_ALTITUDE = 1;
-    static constexpr float DEPLOYMENT_DALT = 0.3;
+    static constexpr float DEPLOYMENT_ALTITUDE = 600;
+    static constexpr float ARMING_ALTITUDE = 10;
 
     static constexpr int DEPLOY_r1 = 10;
     static constexpr int DEPLOY_r2 = 18;

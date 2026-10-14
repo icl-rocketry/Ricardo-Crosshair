@@ -22,7 +22,7 @@ Armed::Armed(Types::CoreTypes::SystemStatus_t& systemstatus, Types::CoreTypes::C
         State(SYSTEM_FLAG::STATE_ARMED,systemstatus),
         systemstatus(systemstatus),
         commandhandler(commandhandler),
-        armIdleTime(3000),
+        apogeeDetector(50),
         crosshair(crosshair) {};
 
 void Armed::initialize() {
@@ -37,19 +37,30 @@ Types::CoreTypes::State_ptr_t Armed::update() {
     //     prevLogMessageTime = millis();
     // }
 
-    // Dont do anything for until timeout has run out
-    if (millis() - armStartTime < armIdleTime) {
-        return nullptr;
+    const float altitude = crosshair.smoothedBaroAlt;
+
+    const float timeDt = static_cast<float>(millis() - m_prevTime);
+
+    const float velocity = timeDt > 0.0 ? (altitude - m_prevAltitude) / timeDt : 0.0;
+
+    const ApogeeInfo& info = apogeeDetector.checkApogee(altitude, velocity, millis());
+
+    m_apogeeReached = info.reached;
+
+    if (altitude > GeneralConfig::ARMING_ALTITUDE) {
+        m_inDangerZone = true;
     }
 
-    if (crosshair.smoothedBaroAlt > deploymentAlt + dAlt) {
-        hasGoneOverDeploymentAlt = true;
-    }
+    m_stageDeployed = crosshair.lowVoltageTriggered;
+    m_stageDeployed = true;
 
     // Test conditions for deployment
-    if (hasGoneOverDeploymentAlt && (crosshair.smoothedBaroAlt < deploymentAlt - dAlt) && crosshair.lowVoltageTriggered) {
+    if (m_inDangerZone && m_stageDeployed && m_apogeeReached && altitude < GeneralConfig::DEPLOYMENT_ALTITUDE) {
         return std::make_unique<Deploy>(systemstatus, commandhandler, crosshair);
     }
+
+    m_prevAltitude = altitude;
+    m_prevTime = millis();
 
     return nullptr;
 };
