@@ -10,7 +10,7 @@
 
 ApogeeDetect::ApogeeDetect(uint16_t sampleTime) :
     _sampleTime(sampleTime),
-    valid_points(0),             // Ordered correctly to match header and prevent -Werror=reorder
+    valid_points(0),
     mlock(true),                 // intialise the mach lockout stuff
     _apogeeinfo({false, 0, 0})
 {
@@ -54,8 +54,8 @@ const ApogeeInfo &ApogeeDetect::checkApogee(float altitude, float velocity, uint
 
         // Apogee detection:
 
-        // Wait until we have at least 3 valid points to do a quadratic fit
-        if (!(_apogeeinfo.reached) && valid_points >= 3)
+        // Wait until we have at least 5 valid points to do a quadratic fit
+        if (!(_apogeeinfo.reached) && valid_points >= 5)
         {
             quadraticFit((float)prevTime/1000.0f, (float)timeSinceEntry/1000.0f, prevAltitude, altitude);
 
