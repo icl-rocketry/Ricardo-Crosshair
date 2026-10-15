@@ -47,14 +47,27 @@ Types::CoreTypes::State_ptr_t Armed::update() {
 
     m_apogeeReached = info.reached;
 
-    if (altitude > GeneralConfig::ARMING_ALTITUDE) {
+    static bool printApogee = true;
+    if (printApogee && m_apogeeReached) {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Apogee Reached");
+        printApogee = false;
+    }
+
+    if (altitude >= GeneralConfig::ARMING_ALTITUDE) {
         m_inDangerZone = true;
     }
 
+    static bool printDangerZone = true;
+    if (printDangerZone && m_inDangerZone) {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Apogee Reached");
+        printDangerZone = false;
+    }
+
     m_stageDeployed = crosshair.lowVoltageTriggered;
+    m_stageDeployed = true;
 
     // Test conditions for deployment
-    if (m_inDangerZone && m_stageDeployed && m_apogeeReached && altitude < GeneralConfig::DEPLOYMENT_ALTITUDE) {
+    if (m_inDangerZone && m_stageDeployed && m_apogeeReached && altitude <= GeneralConfig::DEPLOYMENT_ALTITUDE) {
         RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Deploying!");
         return std::make_unique<Deploy>(systemstatus, commandhandler, crosshair);
     }
