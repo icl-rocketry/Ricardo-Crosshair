@@ -82,7 +82,7 @@ void NRCCrosshair::update() {
     float prevBaroAlt = baroData.alt;
     baro.update(baroData);
     // Simple exponential smoothing
-    smoothedBaroAlt = prevBaroAlt * 0.6 + baroData.alt * 0.4;
+    smoothedBaroAlt = prevBaroAlt * 0.8 + baroData.alt * 0.2;
 
     // If correct time then log to SD
     static unsigned long lastTimeLogged = 0;
@@ -135,6 +135,8 @@ void NRCCrosshair::update() {
 void NRCCrosshair::arm_base(int32_t arg) {
     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Arming Crosshair");
     baro.calibrateBaro();
+    smoothedBaroAlt = 0.0;
+    baroData.alt = 0;
 
     // Write 1 to Cell Switch
     digitalWrite(PinMap::CELL_SWITCH, HIGH);
@@ -206,7 +208,7 @@ void NRCCrosshair::arm_base(int32_t arg) {
     uint8_t err = 0;
     if ((err = i2c.endTransmission()) != 0) {
         RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Crosshair Failed to send I2C to BuckBoost! err : " + std::to_string(err) + " -- " + errFunc(err));
-        return;
+        // return; TODO
     }
 
     // Arm the pyro and re-calibrate the barometer

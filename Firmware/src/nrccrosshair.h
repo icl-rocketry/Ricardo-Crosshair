@@ -64,7 +64,7 @@ public:
     SPIClass spiBaro;
     DPS368 baro;
     SensorStructs::BaroState_t baroData;
-    float smoothedBaroAlt;
+    float smoothedBaroAlt { 0 };
 
     // Voltage Rail Monitors
     VRailMonitor logicRail;

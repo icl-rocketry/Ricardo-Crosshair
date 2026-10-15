@@ -4,7 +4,6 @@
 #include <queue>
 #include <array>
 #include <algorithm>
-#include <array>
 #include <Eigen/Dense>
 
 #include "Config/general_config.h"
@@ -101,6 +100,7 @@ private:
     uint32_t prevCheckApogeeTime{0};
     uint32_t initialEntryTime{0};
 
+    uint32_t valid_points{0}; // Track actual valid points to prevent zero-filled array singularities
 
     RingBuf<uint32_t,arrayLen> time_array;           //create arrays to store recent flight history for apogee approximation
     RingBuf<float,arrayLen> altitude_array;
@@ -114,14 +114,15 @@ private:
      * @return std::array<float,2>
      */
     void quadraticFit(float oldTime, float newTime, float oldAlt, float newAlt);
+
     //sums for fitting polynomial
-    float sigmaTime;
-    float sigmaTime_2;
-    float sigmaTime_3;
-    float sigmaTime_4;
-    float sigmaAlt;
-    float sigmaAltTime;
-    float sigmaAltTime_2;
+    float sigmaTime{0.0f};
+    float sigmaTime_2{0.0f};
+    float sigmaTime_3{0.0f};
+    float sigmaTime_4{0.0f};
+    float sigmaAlt{0.0f};
+    float sigmaAltTime{0.0f};
+    float sigmaAltTime_2{0.0f};
 
     void updateSigmas(float oldTime, float newTime, float oldAlt, float newAlt);
 
