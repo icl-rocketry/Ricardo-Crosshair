@@ -1,4 +1,4 @@
-26398616370892982
+26412793493702838
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -105049,6 +105049,13 @@ iclr
 2
 2
 iclr
+ABM810000MHZ12D2W
+ABM8
+Crystal or Oscillator
+0
+4
+4
+iclr
 ADS131M06IRSNR
 
 
@@ -105210,12 +105217,26 @@ DIO_V3PAN50-M3_I
 2
 2
 iclr
+DM3ATSFPEJM540
+DM3AT-SF-PEJM5(40)-3
+Connector
+0
+14
+14
+iclr
 DPAK228P990X239-4N
 
 
 0
 3
 3
+iclr
+DRC0010J
+
+TPS63002DRCR 
+0
+15
+12
 iclr
 ERJHP6D1000V
 ERJHP6
@@ -105384,6 +105405,13 @@ LMQ
 0
 0
 0
+iclr
+LPS4012223MRC
+LPS4012-222MRC-1
+Inductor
+0
+2
+2
 iclr
 MAX1771CSA&plus_
 
@@ -105567,6 +105595,13 @@ QFN50P400X400X95-24N
 24
 24
 iclr
+QFN50P400X400X100-21N-D
+(ML) 20-Lead QFN
+Integrated Circuit
+0
+21
+21
+iclr
 QFN50P500X500X90-29N
 TMC2209-LA
 Integrated Circuit
@@ -105595,12 +105630,26 @@ Integrated Circuit
 48
 48
 iclr
+QFP50P900X900X160-48N
+AK4493SEQ
+Integrated Circuit
+0
+48
+48
+iclr
 RCLAMP3346PQTNT
 RCLAMP3346PQTNT-2
 Diode
 0
 7
 7
+iclr
+RWB0012A
+RWB0012A
+Integrated Circuit
+0
+12
+12
 iclr
 SDM02U30LP37B
 SDM02U30LP3-7B-4
@@ -105804,6 +105853,13 @@ Schottky Diode
 0
 2
 2
+iclr
+SSM3K15AMFVL3F
+SSM3K15AMFV,L3F
+MOSFET (N-Channel)
+0
+3
+3
 iclr
 SiC437BEDT1GE3
 SiC437BED-T1-GE3-7
