@@ -229,11 +229,7 @@ void NRCCrosshair::arm_base(int32_t arg) {
         return;
     }
 
-    if (arg == 1) {
-        stateMachine.changeState(std::make_unique<Deploy>(systemstatus, commandHandler, *this));
-    } else {
-        stateMachine.changeState(std::make_unique<Armed>(systemstatus, commandHandler, *this));
-    }
+    stateMachine.changeState(std::make_unique<Armed>(systemstatus, commandHandler, *this));
 
     // Call parent arm
     NRCRemoteActuatorBase<NRCCrosshair>::arm_base(arg);
@@ -257,7 +253,6 @@ void NRCCrosshair::disarm_base() {
 }
 
 void NRCCrosshair::execute_base(int32_t arg) {
-
     switch (arg) {
         case 1: // Default
             if (systemstatus.flagSet(SYSTEM_FLAG::STATE_IDLE)) break;
