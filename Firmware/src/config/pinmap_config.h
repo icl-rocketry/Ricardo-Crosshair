@@ -23,8 +23,8 @@ namespace PinMap{
     static constexpr int RxCan = 17;
 
     // Pyro
-    static constexpr int PyroNuke = 38;
-    static constexpr int PyroCont = 39;
+    static constexpr int PyroNuke = 39;
+    static constexpr int PyroCont = 38;
 
     // ADC VRail monitor pins
     static constexpr int BatteryV = 15;

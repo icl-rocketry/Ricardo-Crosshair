@@ -179,33 +179,41 @@ void NRCCrosshair::arm_base(int32_t arg) {
         }
     };
 
+    i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
+    i2c.write(0x04);
+    i2c.write(0b00000011);
+    uint8_t err = 0;
+    if ((err = i2c.endTransmission()) != 0) {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Failed to send I2C 1! err : " + std::to_string(err) + " -- " + errFunc(err));
+        // return;
+    }
+    delay(100);
+
     // // Write low byte (0x6A) to 0x00
-    // i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
-    // i2c.write(0x00);
-    // i2c.write(0xff);
-    // uint8_t err = 0;
-    // if ((err = i2c.endTransmission()) != 0) {
-    //     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Failed to send I2C 1! err : " + std::to_string(err) + " -- " + errFunc(err));
-    //     // return;
-    // }
-    // delay(500);
+    i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
+    i2c.write(0x00);
+    i2c.write(0b00110000);
+    if ((err = i2c.endTransmission()) != 0) {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Failed to send I2C 1! err : " + std::to_string(err) + " -- " + errFunc(err));
+        // return;
+    }
+    delay(100);
 
 
-    // // Write high byte (0x01) to 0x01 — loads both into DAC
-    // i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
-    // i2c.write(0x01);
-    // i2c.write(0b11);
-    // if ((err = i2c.endTransmission()) != 0) {
-    //     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Failed to send I2C 2! err : " + std::to_string(err) + " -- " + errFunc(err));
-    //     // return;
-    // }
-    // delay(500);
+    // Write high byte (0x01) to 0x01 — loads both into DAC
+    i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
+    i2c.write(0x01);
+    i2c.write(0b10);
+    if ((err = i2c.endTransmission()) != 0) {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Failed to send I2C 2! err : " + std::to_string(err) + " -- " + errFunc(err));
+        // return;
+    }
+    delay(100);
 
 
     i2c.beginTransmission(GeneralConfig::BUCK_BOOST_I2C_ADDR);
     i2c.write(0x6);
     i2c.write(regVal);
-    uint8_t err = 0;
     if ((err = i2c.endTransmission()) != 0) {
         RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Crosshair Failed to send I2C to BuckBoost! err : " + std::to_string(err) + " -- " + errFunc(err));
         // return; TODO
